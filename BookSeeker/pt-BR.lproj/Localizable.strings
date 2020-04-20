@@ -1,0 +1,13 @@
+
+//Shared
+"error" = "Erro";
+"alert" = "Atenção";
+"book_not_found" = "Nenhum livro foi encontrado";
+
+
+// Extensions/AlertExtensions
+"cancel" = "Cancelar";
+
+// BookSearch/BookSearchViewController
+"book_search_title" = "Título inválido";
+"book_search_message" = "Informe o título do livro";

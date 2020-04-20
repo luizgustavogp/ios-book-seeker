@@ -1,0 +1,30 @@
+
+/* Class = "UILabel"; text = "..."; ObjectID = "5LU-Nl-1He"; */
+"5LU-Nl-1He.text" = "...";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "82u-rK-aDQ"; */
+"82u-rK-aDQ.text" = "...";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "8Va-uV-u1c"; */
+"8Va-uV-u1c.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Gbu-Bg-5my"; */
+"Gbu-Bg-5my.text" = "Label";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "KIH-kn-3en"; */
+"KIH-kn-3en.text" = "...";
+
+/* Class = "UIBarButtonItem"; title = "Search"; ObjectID = "Lvl-Eb-zmu"; */
+"Lvl-Eb-zmu.title" = "Buscar";
+
+/* Class = "UINavigationItem"; title = "Library"; ObjectID = "Rvg-2m-A1M"; */
+"Rvg-2m-A1M.title" = "Biblioteca";
+
+/* Class = "UILabel"; text = "Search"; ObjectID = "b51-np-llh"; */
+"b51-np-llh.text" = "Buscar";
+
+/* Class = "UILabel"; text = "..."; ObjectID = "fnG-lz-bzS"; */
+"fnG-lz-bzS.text" = "...";
+
+/* Class = "UITextField"; placeholder = "Apple Books"; ObjectID = "fne-kH-FZy"; */
+"fne-kH-FZy.placeholder" = "Livros Apple";

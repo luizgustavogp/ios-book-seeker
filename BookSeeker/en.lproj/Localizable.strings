@@ -1,0 +1,14 @@
+
+//Shared
+"error" = "Error";
+"alert" = "Alert";
+"book_not_found" = "Book not found";
+
+// Extensions/AlertExtensions
+"cancel" = "Cancel";
+
+// BookSearch/BookSearchViewController
+"book_search_title" = "Invalid title";
+"book_search_message" = "Enter book title";
+
+

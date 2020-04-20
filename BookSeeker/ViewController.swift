@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  BookSeeker
 //
-//  Created by Teobaldo Mauro de Moura on 26/09/19.
-//  Copyright © 2019 CIT. All rights reserved.
+//  Created by Luiz Guimarães on 16/04/20.
+//  Copyright © 2020 CodeOfThings. All rights reserved.
 //
 
 import UIKit
@@ -14,4 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+
+
 }
+
