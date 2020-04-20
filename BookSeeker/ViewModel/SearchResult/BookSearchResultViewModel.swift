@@ -20,7 +20,7 @@ final class BookSearchResultViewModel {
     }
     
     func search(term: String) {
-        self.bookSearch?.findByTerm(term :"Teste"){ response, error in
+        self.bookSearch?.findByTerm(term :term){ response, error in
             self.bookObservable.onNext((response, error))
         }
     }
