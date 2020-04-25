@@ -12,5 +12,5 @@ import UIKit
 
 public protocol BookSearchViewControllerDelegate  {
     
-    func didSearch( _  term: String)
+    func didSearch(_ term: String)
 }

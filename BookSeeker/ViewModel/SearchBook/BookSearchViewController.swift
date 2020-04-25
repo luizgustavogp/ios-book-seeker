@@ -10,33 +10,34 @@ import UIKit
 
 class BookSearchViewController: UIViewController {
     
-    @IBOutlet weak var tfSearch: UITextField!
-    
     private var viewModelBookSearch: BookSearchViewModel!
+    
+    override func loadView() {
+        super.loadView()
         
+        self.view = BookSearchView()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.viewModelBookSearch = BookSearchViewModel()
     }
     
-    @IBAction func searchTapped(_ sender: Any) {
+    
+    init(viewModelBookSearch : BookSearchViewModel){
         
-        if(!self.viewModelBookSearch.termIsValid(term: tfSearch.text))
-        {
-            self.alert(title: "book_search_title".localized(), message: "book_search_message");  return
-        }
+        self.viewModelBookSearch = viewModelBookSearch
         
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard
-            .instantiateViewController(withIdentifier: "BookSearchResultViewController") as UIViewController
-        
-        let bookSearchResultViewController = viewController as! BookSearchResultViewController
-        bookSearchResultViewController.term = tfSearch.text
-        
-        self.present(bookSearchResultViewController, animated: true, completion: nil)
+        super.init(nibName: nil, bundle: nil)
     }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    //if(!self.viewModelBookSearch.termIsValid(term: tfSearch.text))
+    //        {
+    //            self.alert(title: "book_search_title".localized(), message: "book_search_message");  return
+    //        }
 }
 
 

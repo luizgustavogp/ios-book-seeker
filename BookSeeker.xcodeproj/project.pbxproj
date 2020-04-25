@@ -14,12 +14,9 @@
 		EC3E389D244C691E009E533C /* CallbackTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E389C244C691E009E533C /* CallbackTypes.swift */; };
 		EC3E38A1244D00AA009E533C /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E38A0244D00AA009E533C /* AlertExtension.swift */; };
 		EC3E38A4244D032A009E533C /* StringLocalizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E38A3244D032A009E533C /* StringLocalizeExtension.swift */; };
-		EC3E38AB244D05FD009E533C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC3E38AD244D05FD009E533C /* Localizable.strings */; };
 		EC3E38B1244D0C4C009E533C /* BookSearchServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E38B0244D0C4C009E533C /* BookSearchServiceIntegrationTests.swift */; };
 		EC5B4375244911E600EC0E7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B4374244911E600EC0E7B /* AppDelegate.swift */; };
 		EC5B4377244911E600EC0E7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B4376244911E600EC0E7B /* SceneDelegate.swift */; };
-		EC5B4379244911E600EC0E7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B4378244911E600EC0E7B /* ViewController.swift */; };
-		EC5B437C244911E600EC0E7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5B437A244911E600EC0E7B /* Main.storyboard */; };
 		EC5B4381244911EA00EC0E7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5B437F244911EA00EC0E7B /* LaunchScreen.storyboard */; };
 		EC80FC262449265F00CA0570 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC252449265F00CA0570 /* Book.swift */; };
 		EC80FC28244927CC00CA0570 /* BookSearchApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC27244927CC00CA0570 /* BookSearchApiService.swift */; };
@@ -35,6 +32,8 @@
 		EC80FC46244B64C700CA0570 /* BookSearchViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC45244B64C700CA0570 /* BookSearchViewControllerDelegate.swift */; };
 		EC80FC48244B6CF400CA0570 /* BookSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC47244B6CF400CA0570 /* BookSearchResultViewController.swift */; };
 		EC80FC4A244BB97200CA0570 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC49244BB97200CA0570 /* BookCell.swift */; };
+		EC9B3E8624544EEA008ED9BA /* BookSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B3E8524544EEA008ED9BA /* BookSearchView.swift */; };
+		ECFA07A32454AC5D000FBFF4 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFA07A22454AC5D000FBFF4 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,17 +65,11 @@
 		EC3E389C244C691E009E533C /* CallbackTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackTypes.swift; sourceTree = "<group>"; };
 		EC3E38A0244D00AA009E533C /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
 		EC3E38A3244D032A009E533C /* StringLocalizeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalizeExtension.swift; sourceTree = "<group>"; };
-		EC3E38A5244D0420009E533C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		EC3E38A6244D0420009E533C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		EC3E38A8244D058A009E533C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
-		EC3E38AC244D05FD009E533C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		EC3E38AE244D0601009E533C /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		EC3E38B0244D0C4C009E533C /* BookSearchServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchServiceIntegrationTests.swift; sourceTree = "<group>"; };
 		EC5B4371244911E600EC0E7B /* BookSeeker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookSeeker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5B4374244911E600EC0E7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC5B4376244911E600EC0E7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC5B4378244911E600EC0E7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC5B437B244911E600EC0E7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC5B437D244911EA00EC0E7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC5B4380244911EA00EC0E7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC5B4382244911EA00EC0E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +90,8 @@
 		EC80FC45244B64C700CA0570 /* BookSearchViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchViewControllerDelegate.swift; sourceTree = "<group>"; };
 		EC80FC47244B6CF400CA0570 /* BookSearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResultViewController.swift; sourceTree = "<group>"; };
 		EC80FC49244BB97200CA0570 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		EC9B3E8524544EEA008ED9BA /* BookSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchView.swift; sourceTree = "<group>"; };
+		ECFA07A22454AC5D000FBFF4 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +154,7 @@
 			children = (
 				EC3E38A0244D00AA009E533C /* AlertExtension.swift */,
 				EC3E38A3244D032A009E533C /* StringLocalizeExtension.swift */,
+				ECFA07A22454AC5D000FBFF4 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -203,12 +199,9 @@
 				EC5B43A42449145600EC0E7B /* Model */,
 				EC5B4374244911E600EC0E7B /* AppDelegate.swift */,
 				EC5B4376244911E600EC0E7B /* SceneDelegate.swift */,
-				EC5B4378244911E600EC0E7B /* ViewController.swift */,
-				EC5B437A244911E600EC0E7B /* Main.storyboard */,
 				EC5B437D244911EA00EC0E7B /* Assets.xcassets */,
 				EC5B437F244911EA00EC0E7B /* LaunchScreen.storyboard */,
 				EC5B4382244911EA00EC0E7B /* Info.plist */,
-				EC3E38AD244D05FD009E533C /* Localizable.strings */,
 			);
 			path = BookSeeker;
 			sourceTree = "<group>";
@@ -290,6 +283,7 @@
 			children = (
 				EC80FC30244939EF00CA0570 /* BookSearchViewController.swift */,
 				EC80FC2C2449346A00CA0570 /* BookSearchViewModel.swift */,
+				EC9B3E8524544EEA008ED9BA /* BookSearchView.swift */,
 				EC80FC45244B64C700CA0570 /* BookSearchViewControllerDelegate.swift */,
 			);
 			path = SearchBook;
@@ -424,8 +418,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC5B4381244911EA00EC0E7B /* LaunchScreen.storyboard in Resources */,
-				EC3E38AB244D05FD009E533C /* Localizable.strings in Resources */,
-				EC5B437C244911E600EC0E7B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,15 +525,16 @@
 			files = (
 				EC80FC39244A71E500CA0570 /* BookResponse.swift in Sources */,
 				EC80FC2A244927FE00CA0570 /* BookSearch.swift in Sources */,
+				ECFA07A32454AC5D000FBFF4 /* UIViewExtension.swift in Sources */,
 				EC80FC262449265F00CA0570 /* Book.swift in Sources */,
 				EC3E38A4244D032A009E533C /* StringLocalizeExtension.swift in Sources */,
 				EC3E3896244C5CA6009E533C /* SearchBookDetailViewController.swift in Sources */,
 				EC80FC31244939EF00CA0570 /* BookSearchViewController.swift in Sources */,
 				EC80FC4A244BB97200CA0570 /* BookCell.swift in Sources */,
 				EC80FC46244B64C700CA0570 /* BookSearchViewControllerDelegate.swift in Sources */,
-				EC5B4379244911E600EC0E7B /* ViewController.swift in Sources */,
 				EC3E389D244C691E009E533C /* CallbackTypes.swift in Sources */,
 				EC80FC43244B638000CA0570 /* BookSearchResultViewModel.swift in Sources */,
+				EC9B3E8624544EEA008ED9BA /* BookSearchView.swift in Sources */,
 				EC80FC48244B6CF400CA0570 /* BookSearchResultViewController.swift in Sources */,
 				EC80FC33244A402400CA0570 /* NetworkService.swift in Sources */,
 				EC80FC35244A406100CA0570 /* AlamofireNetworkService.swift in Sources */,
@@ -587,25 +580,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC3E38AD244D05FD009E533C /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC3E38AC244D05FD009E533C /* en */,
-				EC3E38AE244D0601009E533C /* pt-BR */,
-			);
-			name = Localizable.strings;
-			sourceTree = "<group>";
-		};
-		EC5B437A244911E600EC0E7B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC5B437B244911E600EC0E7B /* Base */,
-				EC3E38A5244D0420009E533C /* pt-BR */,
-				EC3E38A8244D058A009E533C /* en */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC5B437F244911EA00EC0E7B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
