@@ -7,10 +7,7 @@
 //
 
 import Foundation
-import UIKit
 
-
-public protocol BookSearchViewControllerDelegate  {
-    
+public protocol BookSearchViewControllerDelegate : class {    
     func didSearch(_ term: String)
 }

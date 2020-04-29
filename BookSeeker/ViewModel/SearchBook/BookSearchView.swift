@@ -10,13 +10,13 @@ import UIKit
 
 final public class BookSearchView : UIView {
     
+    weak var searchDeletegate : BookSearchTextViewDelegate?
+    
     init() {
         super.init(frame: .zero)
         backgroundColor = .white
-        
         addSubview(lbTitle)
-        addSubview(tfSearch)
-        
+        addSubview(tfSearch)        
         layoutConstraintSetup()
     }
     
@@ -24,20 +24,22 @@ final public class BookSearchView : UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private var lbTitle: UILabel = {
+    private lazy var lbTitle: UILabel = {
         let lbTitle : UILabel = UILabel(frame: .zero)
         lbTitle.translatesAutoresizingMaskIntoConstraints = false
         lbTitle.font = UIFont.boldSystemFont(ofSize: 20.0)
-        lbTitle.text = "Search"
+        lbTitle.text = "search".localized() 
         
         return lbTitle;
     }()
     
-    private var tfSearch: UITextField = {
+    private lazy var tfSearch: UITextField = {
         let tfSearch : UITextField = UITextField(frame: .zero)
+        tfSearch.delegate = self;
         tfSearch.translatesAutoresizingMaskIntoConstraints = false
         tfSearch.borderStyle = .roundedRect
-        tfSearch.placeholder = "Apple Books"
+        tfSearch.keyboardType = .default
+        tfSearch.placeholder = "book_search_place_holder".localized()
         return tfSearch;
     }()
     
@@ -52,4 +54,21 @@ final public class BookSearchView : UIView {
             tfSearch.safeRightAnchor.constraint(equalTo: lbTitle.safeRightAnchor)
         ])
     }
+    
+    public func getText() -> String?{
+        return self.tfSearch.text
+    }    
 }
+
+//https://medium.com/@garg.vivek/primary-action-event-of-uitextfield-87fdac46b648
+
+extension BookSearchView : UITextFieldDelegate {
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        guard let term = self.tfSearch.text else { return false }
+        
+        self.searchDeletegate?.didSearch(term)
+       
+        return true
+    }
+}
+

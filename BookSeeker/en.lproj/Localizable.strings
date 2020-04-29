@@ -2,6 +2,7 @@
 //Shared
 "error" = "Error";
 "alert" = "Alert";
+"search" = "Search";
 "book_not_found" = "Book not found";
 
 // Extensions/AlertExtensions
@@ -10,5 +11,7 @@
 // BookSearch/BookSearchViewController
 "book_search_title" = "Invalid title";
 "book_search_message" = "Enter book title";
+"book_search_place_holder" = "Apple Books";
+
 
 

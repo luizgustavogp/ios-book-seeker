@@ -2,6 +2,7 @@
 //Shared
 "error" = "Erro";
 "alert" = "Atenção";
+"search" = "Buscar";
 "book_not_found" = "Nenhum livro foi encontrado";
 
 
@@ -11,3 +12,5 @@
 // BookSearch/BookSearchViewController
 "book_search_title" = "Título inválido";
 "book_search_message" = "Informe o título do livro";
+"book_search_place_holder" = "Livros da Apple";
+

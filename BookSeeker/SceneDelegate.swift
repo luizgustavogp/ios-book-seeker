@@ -15,10 +15,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let winScene = (scene as? UIWindowScene) else { return }
+   
+        let navigationController = UINavigationController()
         
-        let bookViewModel = BookSearchViewModel()
-        let rootViewController = BookSearchViewController(viewModelBookSearch: bookViewModel)
-        let navigationController = UINavigationController(rootViewController: rootViewController)
+        let appCoordinator = AppCoordinator(navigationController: navigationController);
+        appCoordinator.start()
         
         let win = UIWindow(windowScene: winScene)
         win.rootViewController = navigationController
