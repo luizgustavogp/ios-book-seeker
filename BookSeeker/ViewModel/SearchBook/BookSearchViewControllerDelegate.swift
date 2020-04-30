@@ -6,7 +6,7 @@
 //  Copyright © 2020 CodeOfThings. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 public protocol BookSearchViewControllerDelegate : class {    
     func didSearch(_ term: String)

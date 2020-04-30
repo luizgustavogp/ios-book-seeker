@@ -12,7 +12,8 @@ final class BookSearchViewController: CustomViewController<BookSearchView> {
     
     private var viewModelBookSearch: BookSearchViewModel!
     
-    public weak var bookSearchViewControllerDelegate : BookSearchViewControllerDelegate?
+    //Why it can't be weak?
+    var bookSearchViewControllerDelegate : BookSearchViewControllerDelegate?
     
     override func loadView() {
         super.loadView()
@@ -20,10 +21,13 @@ final class BookSearchViewController: CustomViewController<BookSearchView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         self.customView.searchDeletegate = self
     }
-    
     
     init(viewModelBookSearch : BookSearchViewModel){
         
@@ -39,6 +43,7 @@ final class BookSearchViewController: CustomViewController<BookSearchView> {
 
 extension BookSearchViewController : BookSearchTextViewDelegate {
     func didSearch(_ term: String) {
+        
         if(!self.viewModelBookSearch.termIsValid(term: term))
         {
             self.alert(title: "book_search_title".localized(), message: "book_search_message".localized());  return

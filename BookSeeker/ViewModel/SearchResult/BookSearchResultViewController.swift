@@ -14,26 +14,28 @@ class BookSearchResultViewController: UITableViewController  {
     @IBOutlet var table: UITableView!
     
     private var bookSearchResultViewModel: BookSearchResultViewModel?
-    
-    public var term : String!
-    
+  
     private var books : [Book]?
     
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
+    }
+    
+    init(bookSearchResultViewModel : BookSearchResultViewModel, term : String){
+        super.init(nibName: nil, bundle: nil)
         
-        //Injetar dependência
-        let network : AlamofireNetworkService = AlamofireNetworkService()
-        let bookServiceApi = BookSearchApiService(networkService: network)
-        self.bookSearchResultViewModel = BookSearchResultViewModel(bookSearch: bookServiceApi)
-        self.bookSearchResultViewModel?.search(term: self.term)
+        self.bookSearchResultViewModel = bookSearchResultViewModel
+        self.bookSearchResultViewModel?.search(term: term)
         self.setupBookObserver()
     }
     
-    func setupBookObserver() {
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func setupBookObserver() {
         self.bookSearchResultViewModel?.bookObservable
             .subscribe(onNext: { response in
                 
@@ -66,13 +68,6 @@ class BookSearchResultViewController: UITableViewController  {
     
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let book = self.books?[indexPath.row]
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateViewController(withIdentifier: "SearchBookDetailViewController") as UIViewController
-        let searchBookDetailViewController = viewController as! SearchBookDetailViewController
-        
-        searchBookDetailViewController.id = book?.trackId;
-        
-        self.present(searchBookDetailViewController, animated: true, completion: nil)            
     }
 }
 

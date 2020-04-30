@@ -36,7 +36,7 @@
 		EC80FC48244B6CF400CA0570 /* BookSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC47244B6CF400CA0570 /* BookSearchResultViewController.swift */; };
 		EC80FC4A244BB97200CA0570 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC49244BB97200CA0570 /* BookCell.swift */; };
 		EC9B3E8624544EEA008ED9BA /* BookSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B3E8524544EEA008ED9BA /* BookSearchView.swift */; };
-		ECFA07A32454AC5D000FBFF4 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFA07A22454AC5D000FBFF4 /* UIViewExtension.swift */; };
+		ECFA07A32454AC5D000FBFF4 /* UIViewSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFA07A22454AC5D000FBFF4 /* UIViewSafeArea.swift */; };
 		ECFA07B12454F29D000FBFF4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECFA07B32454F29D000FBFF4 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
@@ -97,7 +97,7 @@
 		EC80FC47244B6CF400CA0570 /* BookSearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResultViewController.swift; sourceTree = "<group>"; };
 		EC80FC49244BB97200CA0570 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		EC9B3E8524544EEA008ED9BA /* BookSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchView.swift; sourceTree = "<group>"; };
-		ECFA07A22454AC5D000FBFF4 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		ECFA07A22454AC5D000FBFF4 /* UIViewSafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewSafeArea.swift; sourceTree = "<group>"; };
 		ECFA07AC2454F0AD000FBFF4 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		ECFA07B42454F2B2000FBFF4 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		ECFA07B52454F2B5000FBFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				EC3E38A0244D00AA009E533C /* UIViewAlertExtension.swift */,
-				ECFA07A22454AC5D000FBFF4 /* UIViewExtension.swift */,
+				ECFA07A22454AC5D000FBFF4 /* UIViewSafeArea.swift */,
 				EC4CF8EE245A2F2E00948743 /* UICustomView.swift */,
 			);
 			path = UIExtensions;
@@ -549,7 +549,7 @@
 				EC80FC39244A71E500CA0570 /* BookResponse.swift in Sources */,
 				EC4CF8F3245A47A300948743 /* AppCoordinator.swift in Sources */,
 				EC80FC2A244927FE00CA0570 /* BookSearch.swift in Sources */,
-				ECFA07A32454AC5D000FBFF4 /* UIViewExtension.swift in Sources */,
+				ECFA07A32454AC5D000FBFF4 /* UIViewSafeArea.swift in Sources */,
 				EC80FC262449265F00CA0570 /* Book.swift in Sources */,
 				EC3E38A4244D032A009E533C /* StringLocalizeExtension.swift in Sources */,
 				EC3E3896244C5CA6009E533C /* SearchBookDetailViewController.swift in Sources */,
