@@ -1,5 +1,5 @@
 //
-//  SearchBookDetailViewController.swift
+//  BookSearchDetailViewController.swift
 //  BookSeeker
 //
 //  Created by Luiz Guimarães on 19/04/20.
@@ -9,7 +9,7 @@
 import UIKit
 import RxSwift
 
-class SearchBookDetailViewController: UIViewController {
+public class BookSearchDetailViewController: UIViewController {
     
     @IBOutlet weak var lbTitle: UILabel!
     @IBOutlet weak var lbPrice: UILabel!
@@ -20,18 +20,20 @@ class SearchBookDetailViewController: UIViewController {
     
     private let disposeBag = DisposeBag()
     
-    public var id : Int!
-    
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    init(bookSearchDetailViewModel : BookSearchDetailViewModel, bookId : Int) {
+        super.init(nibName: nil, bundle: nil)
         
-        //Injetar dependências
-        let network : AlamofireNetworkService = AlamofireNetworkService()
-        let bookServiceApi = BookSearchApiService(networkService: network)
-        
-        self.bookSearchDetailViewModel = BookSearchDetailViewModel(bookSearch: bookServiceApi)
-        self.bookSearchDetailViewModel?.search(id: id);
+        self.bookSearchDetailViewModel = bookSearchDetailViewModel
+        self.bookSearchDetailViewModel?.search(id: bookId);
         self.setupBookObserver()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func setupBookObserver() {

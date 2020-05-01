@@ -7,7 +7,7 @@
 
 import Foundation
 
-class BookSearchApiService : BookSearch {
+public final class BookSearchApiService : BookSearch {
     
     private let networkService : NetworkService
     

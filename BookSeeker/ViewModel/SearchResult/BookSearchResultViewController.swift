@@ -11,8 +11,6 @@ import RxSwift
 
 class BookSearchResultViewController: UITableViewController  {
     
-    @IBOutlet var table: UITableView!
-    
     private var bookSearchResultViewModel: BookSearchResultViewModel?
   
     private var books : [Book]?
@@ -45,7 +43,7 @@ class BookSearchResultViewController: UITableViewController  {
                 
                 guard let results = response.bookResponse?.results else { return }
                 self.books = results
-                self.table.reloadData()
+                self.tableView.reloadData()
                 
             }).disposed(by: disposeBag)
     }

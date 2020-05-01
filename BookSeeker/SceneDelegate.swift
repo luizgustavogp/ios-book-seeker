@@ -13,29 +13,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
-    let container: Container = {
-        let container = Container()
-        
-        container.register(BookSearchViewModel.self) {_ in 
-            return BookSearchViewModel()
-        }
-        
-        container.register(BookSearchViewController.self) { r in
-            let bookSearchViewModel = r.resolve(BookSearchViewModel.self)
-            return BookSearchViewController(viewModelBookSearch: bookSearchViewModel!)
-        }
-        
-        return container
-    }()
-    
-    
-    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let winScene = (scene as? UIWindowScene) else { return }
         
+        let di = BookSeekerAssembler()
+        let assembler = di.register();
+        
         let navigationController = UINavigationController()
         
-        let appCoordinator = AppCoordinator(navigationController: navigationController, container:  container);
+        let appCoordinator = AppCoordinator(navigationController: navigationController, resolver: assembler.resolver);
         appCoordinator.start()
         
         let win = UIWindow(windowScene: winScene)

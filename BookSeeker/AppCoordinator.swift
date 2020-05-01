@@ -11,7 +11,7 @@ import Swinject
 
 protocol Coordinator {
     
-    var container : Container {get set}
+    var resolver : Resolver {get set}
     
     var navigationController: UINavigationController{ get set }
     
@@ -20,18 +20,18 @@ protocol Coordinator {
 
 public class AppCoordinator : Coordinator {
     
-    var container: Container
+    var resolver: Resolver
     
     var navigationController: UINavigationController
     
-    init(navigationController: UINavigationController, container : Container) {
+    init(navigationController: UINavigationController, resolver : Resolver) {
         self.navigationController = navigationController
-        self.container = container
+        self.resolver = resolver
     }
     
     func start() {
         
-        let rootViewController = container.resolve(BookSearchViewController.self)!
+        let rootViewController = resolver.resolve(BookSearchViewController.self)!
         rootViewController.bookSearchViewControllerDelegate = self
         
         self.navigationController.pushViewController(rootViewController, animated: true)
