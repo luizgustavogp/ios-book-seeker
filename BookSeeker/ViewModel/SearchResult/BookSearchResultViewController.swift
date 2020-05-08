@@ -11,14 +11,20 @@ import RxSwift
 
 class BookSearchResultViewController: UITableViewController  {
     
+    private let ceelIdentitier = "reusableBookCell";
+    
     private var bookSearchResultViewModel: BookSearchResultViewModel?
-  
+    
     private var books : [Book]?
     
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "book_search_result_view_title".localized()
+        tableView.rowHeight = 120
+        tableView.register(BookCell.self, forCellReuseIdentifier: ceelIdentitier)
     }
     
     init(bookSearchResultViewModel : BookSearchResultViewModel, term : String){
@@ -54,7 +60,7 @@ class BookSearchResultViewController: UITableViewController  {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "reusableBookCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ceelIdentitier, for: indexPath)
             as? BookCell else {
                 return UITableViewCell()
         }

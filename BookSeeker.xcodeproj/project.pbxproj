@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4302D5ACD3024E3B1993A533 /* Pods_BookSeekerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE532B43EBC3675649B52F8 /* Pods_BookSeekerTests.framework */; };
-		49B8A174B29ACCFA014BEA49 /* Pods_BookSeeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38903BB9252A43E8BDC9E12 /* Pods_BookSeeker.framework */; };
 		EC3E3896244C5CA6009E533C /* BookSearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E3895244C5CA6009E533C /* BookSearchDetailViewController.swift */; };
 		EC3E389D244C691E009E533C /* CallbackTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E389C244C691E009E533C /* CallbackTypes.swift */; };
 		EC3E38A1244D00AA009E533C /* UIViewAlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E38A0244D00AA009E533C /* UIViewAlertExtension.swift */; };
@@ -60,6 +59,19 @@
 			remoteInfo = BookSeeker;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EC53DDB62462347200626E0C /* Embed PlugIns */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0CE532B43EBC3675649B52F8 /* Pods_BookSeekerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookSeekerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,7 +128,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49B8A174B29ACCFA014BEA49 /* Pods_BookSeeker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,9 +214,25 @@
 			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
+		EC53DD39246213F700626E0C /* BookSeekerApplication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BookSeekerApplication;
+			sourceTree = "<group>";
+		};
+		EC53DD3B2462153D00626E0C /* BookerSeekerInfrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BookerSeekerInfrastructure;
+			sourceTree = "<group>";
+		};
 		EC5B4368244911E600EC0E7B = {
 			isa = PBXGroup;
 			children = (
+				EC53DD3B2462153D00626E0C /* BookerSeekerInfrastructure */,
+				EC53DD39246213F700626E0C /* BookSeekerApplication */,
 				EC5B4373244911E600EC0E7B /* BookSeeker */,
 				EC5B438A244911EA00EC0E7B /* BookSeekerTests */,
 				EC5B4372244911E600EC0E7B /* Products */,
@@ -361,6 +388,7 @@
 				EC5B436E244911E600EC0E7B /* Frameworks */,
 				EC5B436F244911E600EC0E7B /* Resources */,
 				3567B912552CDA437237E302 /* [CP] Embed Pods Frameworks */,
+				EC53DDB62462347200626E0C /* Embed PlugIns */,
 			);
 			buildRules = (
 			);

@@ -2,7 +2,7 @@
 //Shared
 "error" = "Erro";
 "alert" = "Atenção";
-"search" = "Buscar";
+"search" = "Pesquisar";
 "book_not_found" = "Nenhum livro foi encontrado";
 
 
@@ -10,7 +10,12 @@
 "cancel" = "Cancelar";
 
 // BookSearch/BookSearchViewController
+"book_search_view_title" = "Pesquisar";
 "book_search_title" = "Título inválido";
 "book_search_message" = "Informe o título do livro";
 "book_search_place_holder" = "Livros da Apple";
+
+// BookSearchResult/BookSearchResultViewController
+"book_search_result_view_title" = "Sua biblioteca";
+
 

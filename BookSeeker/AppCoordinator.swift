@@ -45,6 +45,7 @@ extension AppCoordinator : BookSearchViewControllerDelegate{
         let bookServiceApi = BookSearchApiService(networkService: network)
         let bookSearchResultViewModel = BookSearchResultViewModel(bookSearch: bookServiceApi)
         let bookSearchResultViewController = BookSearchResultViewController(bookSearchResultViewModel: bookSearchResultViewModel, term: term)
+        
         self.navigationController.pushViewController(bookSearchResultViewController, animated: true)
     }
 }

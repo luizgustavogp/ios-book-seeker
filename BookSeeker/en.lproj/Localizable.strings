@@ -9,9 +9,13 @@
 "cancel" = "Cancel";
 
 // BookSearch/BookSearchViewController
+"book_search_view_title" = "Search";
 "book_search_title" = "Invalid title";
 "book_search_message" = "Enter book title";
 "book_search_place_holder" = "Apple Books";
+
+// BookSearchResult/BookSearchResultViewController
+"book_search_result_view_title" = "In Your Library";
 
 
 

@@ -17,7 +17,7 @@ final public class BookSearchView : UIView {
         backgroundColor = .white
         addSubview(lbTitle)
         addSubview(tfSearch)        
-        layoutConstraintSetup()
+        setupLayoutConstraint()
     }
     
     required init?(coder: NSCoder) {
@@ -43,7 +43,7 @@ final public class BookSearchView : UIView {
         return tfSearch;
     }()
     
-    private func layoutConstraintSetup() {
+    private func setupLayoutConstraint() {
         NSLayoutConstraint.activate([
             lbTitle.safeTopAnchor.constraint(equalTo: safeTopAnchor, constant: 20),
             lbTitle.safeLeftAnchor.constraint(equalTo: safeLeftAnchor, constant: 10),

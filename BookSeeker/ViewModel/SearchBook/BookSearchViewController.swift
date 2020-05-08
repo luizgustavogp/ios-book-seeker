@@ -21,6 +21,8 @@ final class BookSearchViewController: CustomViewController<BookSearchView> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "book_search_view_title".localized()        
     }
     
     public override func viewWillAppear(_ animated: Bool) {
