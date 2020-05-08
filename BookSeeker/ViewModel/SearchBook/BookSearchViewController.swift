@@ -22,13 +22,19 @@ final class BookSearchViewController: CustomViewController<BookSearchView> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "book_search_view_title".localized()        
+        self.title = "book_search_view_title".localized()
     }
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
         self.customView.searchDeletegate = self
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     init(viewModelBookSearch : BookSearchViewModel){

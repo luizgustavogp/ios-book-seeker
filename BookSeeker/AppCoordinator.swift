@@ -33,7 +33,7 @@ public class AppCoordinator : Coordinator {
         
         let rootViewController = resolver.resolve(BookSearchViewController.self)!
         rootViewController.bookSearchViewControllerDelegate = self
-        
+              
         self.navigationController.pushViewController(rootViewController, animated: true)
     }
 }
