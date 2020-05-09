@@ -11,6 +11,7 @@ import Alamofire
 
 class AlamofireNetworkService: NetworkService {
     
+    //Change it to be generic
     func get(url: String, parameters: [String : Any]?, completion: @escaping (BookResponse?, String?) -> Void) {
         AF.request(url, parameters: parameters)
             .responseDecodable(of: BookResponse.self) { response in

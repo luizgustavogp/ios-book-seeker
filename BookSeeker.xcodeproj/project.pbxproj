@@ -33,13 +33,18 @@
 		EC80FC35244A406100CA0570 /* AlamofireNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC34244A406100CA0570 /* AlamofireNetworkService.swift */; };
 		EC80FC39244A71E500CA0570 /* BookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC38244A71E500CA0570 /* BookResponse.swift */; };
 		EC80FC3B244A73BE00CA0570 /* ModelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC3A244A73BE00CA0570 /* ModelResponse.swift */; };
-		EC80FC3E244B28E400CA0570 /* AlamofireNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC3D244B28E400CA0570 /* AlamofireNetworkTests.swift */; };
 		EC80FC43244B638000CA0570 /* BookSearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC42244B638000CA0570 /* BookSearchResultViewModel.swift */; };
 		EC80FC46244B64C700CA0570 /* BookSearchViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC45244B64C700CA0570 /* BookSearchViewControllerDelegate.swift */; };
 		EC80FC48244B6CF400CA0570 /* BookSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC47244B6CF400CA0570 /* BookSearchResultViewController.swift */; };
 		EC80FC4A244BB97200CA0570 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC49244BB97200CA0570 /* BookCell.swift */; };
 		EC90199B24675CAF00BD662B /* BookSeekerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; };
 		EC9019A024675CAF00BD662B /* BookSeekerDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC90199F24675CAF00BD662B /* BookSeekerDomainTests.swift */; };
+		EC901A1A2467647300BD662B /* BookSeekerInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC901A112467647300BD662B /* BookSeekerInfrastructure.framework */; };
+		EC901A29246766D900BD662B /* BookSeekerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; };
+		EC901A2A246766D900BD662B /* BookSeekerDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC901A2E2467678F00BD662B /* BookSeekerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; };
+		EC901A2F2467678F00BD662B /* BookSeekerDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC901A332467683E00BD662B /* AlamofireNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC3D244B28E400CA0570 /* AlamofireNetworkTests.swift */; };
 		EC9B3E8624544EEA008ED9BA /* BookSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B3E8524544EEA008ED9BA /* BookSearchView.swift */; };
 		ECFA07A32454AC5D000FBFF4 /* UIViewSafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECFA07A22454AC5D000FBFF4 /* UIViewSafeArea.swift */; };
 		ECFA07B12454F29D000FBFF4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECFA07B32454F29D000FBFF4 /* Localizable.strings */; };
@@ -67,6 +72,27 @@
 			remoteGlobalIDString = EC90199124675CAE00BD662B;
 			remoteInfo = BookSeekerDomain;
 		};
+		EC901A1B2467647300BD662B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5B4369244911E600EC0E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC901A102467647300BD662B;
+			remoteInfo = BookSeekerInfrastructure;
+		};
+		EC901A2B246766D900BD662B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5B4369244911E600EC0E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC90199124675CAE00BD662B;
+			remoteInfo = BookSeekerDomain;
+		};
+		EC901A302467678F00BD662B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5B4369244911E600EC0E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC90199124675CAE00BD662B;
+			remoteInfo = BookSeekerDomain;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -78,6 +104,28 @@
 			files = (
 			);
 			name = "Embed PlugIns";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC901A2D246766DA00BD662B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC901A2A246766D900BD662B /* BookSeekerDomain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC901A322467678F00BD662B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC901A2F2467678F00BD662B /* BookSeekerDomain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -130,6 +178,10 @@
 		EC90199A24675CAF00BD662B /* BookSeekerDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSeekerDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC90199F24675CAF00BD662B /* BookSeekerDomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeekerDomainTests.swift; sourceTree = "<group>"; };
 		EC9019A124675CAF00BD662B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC901A112467647300BD662B /* BookSeekerInfrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BookSeekerInfrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC901A142467647300BD662B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC901A192467647300BD662B /* BookSeekerInfrastructureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSeekerInfrastructureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC901A202467647300BD662B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC9B3E8524544EEA008ED9BA /* BookSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchView.swift; sourceTree = "<group>"; };
 		ECFA07A22454AC5D000FBFF4 /* UIViewSafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewSafeArea.swift; sourceTree = "<group>"; };
 		ECFA07AC2454F0AD000FBFF4 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -142,6 +194,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC901A29246766D900BD662B /* BookSeekerDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +225,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC90199B24675CAF00BD662B /* BookSeekerDomain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC901A0E2467647300BD662B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC901A2E2467678F00BD662B /* BookSeekerDomain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC901A162467647300BD662B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC901A1A2467647300BD662B /* BookSeekerInfrastructure.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +319,8 @@
 				EC5B438A244911EA00EC0E7B /* BookSeekerTests */,
 				EC90199324675CAE00BD662B /* BookSeekerDomain */,
 				EC90199E24675CAF00BD662B /* BookSeekerDomainTests */,
+				EC901A122467647300BD662B /* BookSeekerInfrastructure */,
+				EC901A1D2467647300BD662B /* BookSeekerInfrastructureTests */,
 				EC5B4372244911E600EC0E7B /* Products */,
 				BB8BA720DA03C5D1E9ABEE69 /* Pods */,
 				1F007F678F1E994670F70253 /* Frameworks */,
@@ -264,6 +335,8 @@
 				EC5B4392244911EA00EC0E7B /* BookSeekerUITests.xctest */,
 				EC90199224675CAE00BD662B /* BookSeekerDomain.framework */,
 				EC90199A24675CAF00BD662B /* BookSeekerDomainTests.xctest */,
+				EC901A112467647300BD662B /* BookSeekerInfrastructure.framework */,
+				EC901A192467647300BD662B /* BookSeekerInfrastructureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -274,8 +347,6 @@
 				EC53DD2C245CD6A900626E0C /* DependencyInjection */,
 				EC4CF8ED245A251300948743 /* UIExtensions */,
 				EC3E38A2244D00BE009E533C /* Extensions */,
-				EC80FC36244A40A300CA0570 /* Network */,
-				EC80FC37244A518F00CA0570 /* Storage */,
 				EC5B43A52449146300EC0E7B /* ViewModel */,
 				EC5B4374244911E600EC0E7B /* AppDelegate.swift */,
 				EC5B4376244911E600EC0E7B /* SceneDelegate.swift */,
@@ -292,7 +363,6 @@
 			isa = PBXGroup;
 			children = (
 				EC3E38AF244D0BDC009E533C /* BookServiceTests */,
-				EC80FC3C244B28A500CA0570 /* NetworkTests */,
 				EC5B438D244911EA00EC0E7B /* Info.plist */,
 			);
 			path = BookSeekerTests;
@@ -307,29 +377,6 @@
 				EC80FC3F244B469E00CA0570 /* SearchBook */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		EC80FC36244A40A300CA0570 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				EC80FC34244A406100CA0570 /* AlamofireNetworkService.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		EC80FC37244A518F00CA0570 /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Storage;
-			sourceTree = "<group>";
-		};
-		EC80FC3C244B28A500CA0570 /* NetworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				EC80FC3D244B28E400CA0570 /* AlamofireNetworkTests.swift */,
-			);
-			path = NetworkTests;
 			sourceTree = "<group>";
 		};
 		EC80FC3F244B469E00CA0570 /* SearchBook */ = {
@@ -418,10 +465,51 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		EC901A122467647300BD662B /* BookSeekerInfrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				EC901A28246764C200BD662B /* Network */,
+				EC901A142467647300BD662B /* Info.plist */,
+			);
+			path = BookSeekerInfrastructure;
+			sourceTree = "<group>";
+		};
+		EC901A1D2467647300BD662B /* BookSeekerInfrastructureTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC901A342467689D00BD662B /* Newtwork */,
+				EC901A202467647300BD662B /* Info.plist */,
+			);
+			path = BookSeekerInfrastructureTests;
+			sourceTree = "<group>";
+		};
+		EC901A28246764C200BD662B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC80FC34244A406100CA0570 /* AlamofireNetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EC901A342467689D00BD662B /* Newtwork */ = {
+			isa = PBXGroup;
+			children = (
+				EC80FC3D244B28E400CA0570 /* AlamofireNetworkTests.swift */,
+			);
+			path = Newtwork;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
 		EC90198D24675CAE00BD662B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC901A0C2467647300BD662B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -441,10 +529,12 @@
 				EC5B436F244911E600EC0E7B /* Resources */,
 				3567B912552CDA437237E302 /* [CP] Embed Pods Frameworks */,
 				EC53DDB62462347200626E0C /* Embed PlugIns */,
+				EC901A2D246766DA00BD662B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EC901A2C246766D900BD662B /* PBXTargetDependency */,
 			);
 			name = BookSeeker;
 			productName = BookSeeker;
@@ -525,6 +615,44 @@
 			productReference = EC90199A24675CAF00BD662B /* BookSeekerDomainTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		EC901A102467647300BD662B /* BookSeekerInfrastructure */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC901A222467647300BD662B /* Build configuration list for PBXNativeTarget "BookSeekerInfrastructure" */;
+			buildPhases = (
+				EC901A0C2467647300BD662B /* Headers */,
+				EC901A0D2467647300BD662B /* Sources */,
+				EC901A0E2467647300BD662B /* Frameworks */,
+				EC901A0F2467647300BD662B /* Resources */,
+				EC901A322467678F00BD662B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC901A312467678F00BD662B /* PBXTargetDependency */,
+			);
+			name = BookSeekerInfrastructure;
+			productName = BookSeekerInfrastructure;
+			productReference = EC901A112467647300BD662B /* BookSeekerInfrastructure.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC901A182467647300BD662B /* BookSeekerInfrastructureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC901A252467647300BD662B /* Build configuration list for PBXNativeTarget "BookSeekerInfrastructureTests" */;
+			buildPhases = (
+				EC901A152467647300BD662B /* Sources */,
+				EC901A162467647300BD662B /* Frameworks */,
+				EC901A172467647300BD662B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC901A1C2467647300BD662B /* PBXTargetDependency */,
+			);
+			name = BookSeekerInfrastructureTests;
+			productName = BookSeekerInfrastructureTests;
+			productReference = EC901A192467647300BD662B /* BookSeekerInfrastructureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -552,6 +680,12 @@
 					EC90199924675CAF00BD662B = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
+					EC901A102467647300BD662B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					EC901A182467647300BD662B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = EC5B436C244911E600EC0E7B /* Build configuration list for PBXProject "BookSeeker" */;
@@ -573,6 +707,8 @@
 				EC5B4391244911EA00EC0E7B /* BookSeekerUITests */,
 				EC90199124675CAE00BD662B /* BookSeekerDomain */,
 				EC90199924675CAF00BD662B /* BookSeekerDomainTests */,
+				EC901A102467647300BD662B /* BookSeekerInfrastructure */,
+				EC901A182467647300BD662B /* BookSeekerInfrastructureTests */,
 			);
 		};
 /* End PBXProject section */
@@ -609,6 +745,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EC90199824675CAF00BD662B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC901A0F2467647300BD662B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC901A172467647300BD662B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -740,7 +890,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC3E38B1244D0C4C009E533C /* BookSearchServiceIntegrationTests.swift in Sources */,
-				EC80FC3E244B28E400CA0570 /* AlamofireNetworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -766,6 +915,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EC901A0D2467647300BD662B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC901A152467647300BD662B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC901A332467683E00BD662B /* AlamofireNetworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -783,6 +947,21 @@
 			isa = PBXTargetDependency;
 			target = EC90199124675CAE00BD662B /* BookSeekerDomain */;
 			targetProxy = EC90199C24675CAF00BD662B /* PBXContainerItemProxy */;
+		};
+		EC901A1C2467647300BD662B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC901A102467647300BD662B /* BookSeekerInfrastructure */;
+			targetProxy = EC901A1B2467647300BD662B /* PBXContainerItemProxy */;
+		};
+		EC901A2C246766D900BD662B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC90199124675CAE00BD662B /* BookSeekerDomain */;
+			targetProxy = EC901A2B246766D900BD662B /* PBXContainerItemProxy */;
+		};
+		EC901A312467678F00BD662B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC90199124675CAE00BD662B /* BookSeekerDomain */;
+			targetProxy = EC901A302467678F00BD662B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1056,6 +1235,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
 				DEVELOPMENT_TEAM = V7U57L9B68;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1070,8 +1250,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerDomain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1085,6 +1266,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
 				DEVELOPMENT_TEAM = V7U57L9B68;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1099,8 +1281,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerDomain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1141,6 +1324,104 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerDomainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EC901A232467647300BD662B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V7U57L9B68;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BookSeekerInfrastructure/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerInfrastructure;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC901A242467647300BD662B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V7U57L9B68;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BookSeekerInfrastructure/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerInfrastructure;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC901A262467647300BD662B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V7U57L9B68;
+				INFOPLIST_FILE = BookSeekerInfrastructureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerInfrastructureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EC901A272467647300BD662B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = V7U57L9B68;
+				INFOPLIST_FILE = BookSeekerInfrastructureTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerInfrastructureTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
@@ -1200,6 +1481,24 @@
 			buildConfigurations = (
 				EC9019A524675CAF00BD662B /* Debug */,
 				EC9019A624675CAF00BD662B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC901A222467647300BD662B /* Build configuration list for PBXNativeTarget "BookSeekerInfrastructure" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC901A232467647300BD662B /* Debug */,
+				EC901A242467647300BD662B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC901A252467647300BD662B /* Build configuration list for PBXNativeTarget "BookSeekerInfrastructureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC901A262467647300BD662B /* Debug */,
+				EC901A272467647300BD662B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,8 +6,9 @@
 //  Copyright © 2020 CodeOfThings. All rights reserved.
 //
 
+
 import XCTest
-@testable import BookSeeker
+@testable import BookSeekerInfrastructure
 
 class AlamofireNetworkTests: XCTestCase {
     
