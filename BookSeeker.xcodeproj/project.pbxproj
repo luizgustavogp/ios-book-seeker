@@ -25,7 +25,7 @@
 		EC5B4377244911E600EC0E7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B4376244911E600EC0E7B /* SceneDelegate.swift */; };
 		EC5B4381244911EA00EC0E7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5B437F244911EA00EC0E7B /* LaunchScreen.storyboard */; };
 		EC80FC262449265F00CA0570 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC252449265F00CA0570 /* Book.swift */; };
-		EC80FC28244927CC00CA0570 /* BookSearchApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC27244927CC00CA0570 /* BookSearchApiService.swift */; };
+		EC80FC28244927CC00CA0570 /* BookSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC27244927CC00CA0570 /* BookSearchService.swift */; };
 		EC80FC2A244927FE00CA0570 /* BookSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC29244927FE00CA0570 /* BookSearch.swift */; };
 		EC80FC2D2449346A00CA0570 /* BookSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC2C2449346A00CA0570 /* BookSearchViewModel.swift */; };
 		EC80FC31244939EF00CA0570 /* BookSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC30244939EF00CA0570 /* BookSearchViewController.swift */; };
@@ -112,7 +112,7 @@
 		EC5B438D244911EA00EC0E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC5B4392244911EA00EC0E7B /* BookSeekerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSeekerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC80FC252449265F00CA0570 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		EC80FC27244927CC00CA0570 /* BookSearchApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchApiService.swift; sourceTree = "<group>"; };
+		EC80FC27244927CC00CA0570 /* BookSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchService.swift; sourceTree = "<group>"; };
 		EC80FC29244927FE00CA0570 /* BookSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearch.swift; sourceTree = "<group>"; };
 		EC80FC2C2449346A00CA0570 /* BookSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchViewModel.swift; sourceTree = "<group>"; };
 		EC80FC30244939EF00CA0570 /* BookSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchViewController.swift; sourceTree = "<group>"; };
@@ -276,8 +276,6 @@
 				EC3E38A2244D00BE009E533C /* Extensions */,
 				EC80FC36244A40A300CA0570 /* Network */,
 				EC80FC37244A518F00CA0570 /* Storage */,
-				EC5B43A7244917D300EC0E7B /* Services */,
-				EC5B43A42449145600EC0E7B /* Model */,
 				EC5B43A52449146300EC0E7B /* ViewModel */,
 				EC5B4374244911E600EC0E7B /* AppDelegate.swift */,
 				EC5B4376244911E600EC0E7B /* SceneDelegate.swift */,
@@ -300,15 +298,6 @@
 			path = BookSeekerTests;
 			sourceTree = "<group>";
 		};
-		EC5B43A42449145600EC0E7B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EC80FC252449265F00CA0570 /* Book.swift */,
-				EC80FC3A244A73BE00CA0570 /* ModelResponse.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		EC5B43A52449146300EC0E7B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,28 +309,9 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		EC5B43A7244917D300EC0E7B /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				EC80FC2B24492ABD00CA0570 /* BookSearch */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		EC80FC2B24492ABD00CA0570 /* BookSearch */ = {
-			isa = PBXGroup;
-			children = (
-				EC80FC27244927CC00CA0570 /* BookSearchApiService.swift */,
-				EC80FC29244927FE00CA0570 /* BookSearch.swift */,
-				EC80FC38244A71E500CA0570 /* BookResponse.swift */,
-			);
-			path = BookSearch;
-			sourceTree = "<group>";
-		};
 		EC80FC36244A40A300CA0570 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				EC80FC32244A402400CA0570 /* NetworkService.swift */,
 				EC80FC34244A406100CA0570 /* AlamofireNetworkService.swift */,
 			);
 			path = Network;
@@ -396,6 +366,9 @@
 		EC90199324675CAE00BD662B /* BookSeekerDomain */ = {
 			isa = PBXGroup;
 			children = (
+				EC9019B7246761DE00BD662B /* Models */,
+				EC9019B6246761A400BD662B /* Network */,
+				EC9019AE24675E2A00BD662B /* Books */,
 				EC90199524675CAE00BD662B /* Info.plist */,
 			);
 			path = BookSeekerDomain;
@@ -408,6 +381,41 @@
 				EC9019A124675CAF00BD662B /* Info.plist */,
 			);
 			path = BookSeekerDomainTests;
+			sourceTree = "<group>";
+		};
+		EC9019AE24675E2A00BD662B /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				EC80FC252449265F00CA0570 /* Book.swift */,
+				EC9019AF24675E7600BD662B /* Search */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		EC9019AF24675E7600BD662B /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EC80FC27244927CC00CA0570 /* BookSearchService.swift */,
+				EC80FC29244927FE00CA0570 /* BookSearch.swift */,
+				EC80FC38244A71E500CA0570 /* BookResponse.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		EC9019B6246761A400BD662B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC80FC32244A402400CA0570 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EC9019B7246761DE00BD662B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EC80FC3A244A73BE00CA0570 /* ModelResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -721,7 +729,7 @@
 				EC53DD34245CE06400626E0C /* BookSearchDetailViewModel.swift in Sources */,
 				EC5B4375244911E600EC0E7B /* AppDelegate.swift in Sources */,
 				EC3E38A1244D00AA009E533C /* UIViewAlertExtension.swift in Sources */,
-				EC80FC28244927CC00CA0570 /* BookSearchApiService.swift in Sources */,
+				EC80FC28244927CC00CA0570 /* BookSearchService.swift in Sources */,
 				EC80FC3B244A73BE00CA0570 /* ModelResponse.swift in Sources */,
 				EC5B4377244911E600EC0E7B /* SceneDelegate.swift in Sources */,
 			);

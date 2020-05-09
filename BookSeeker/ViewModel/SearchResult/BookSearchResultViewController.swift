@@ -71,7 +71,7 @@ class BookSearchResultViewController: UITableViewController  {
     }
     
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let book = self.books?[indexPath.row]
+        //let book = self.books?[indexPath.row]
     }
 }
 
