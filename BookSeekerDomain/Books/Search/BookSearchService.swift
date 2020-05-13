@@ -11,11 +11,11 @@ public final class BookSearchApiService : BookSearch {
     
     private let networkService : NetworkService
     
-    private let apiEndPoint:(String) -> String = { (path:String) -> String in
+    private let apiEndPoint:(String) -> URL = { (path:String) -> URL in
         guard let url = URL(string: "https://itunes.apple.com/\(path)") else {
             fatalError("Invalid apiEndPoint.")
         }
-        return url.absoluteString
+        return url
     }
     
     init(networkService : NetworkService) {

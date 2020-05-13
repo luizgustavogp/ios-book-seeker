@@ -13,5 +13,5 @@ typealias RequestCompletion = (_ result : BookResponse?, _ error: String?) -> Vo
 
 protocol NetworkService {
     
-    func get(url: String, parameters: [String: Any]?, completion: @escaping RequestCompletion)
+    func get(url: URL, parameters: [String: Any]?, completion: @escaping RequestCompletion)
 }
