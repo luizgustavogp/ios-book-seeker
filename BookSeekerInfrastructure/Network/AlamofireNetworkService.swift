@@ -10,17 +10,17 @@ import Foundation
 import Alamofire
 
 class AlamofireNetworkService: NetworkService {
-    
+       
     //Change it to be generic
-    func get(url: URL, parameters: [String : Any]?, completion: @escaping (BookResponse?, String?) -> Void) {
+    func get(url: URL, parameters: [String : Any]?, completion: @escaping RequestCompletion) {
         AF.request(url, parameters: parameters)
-            .responseDecodable(of: BookResponse.self) { response in
+            .responseData { response in
                 switch response.result {
                 case .success:
-                    guard let bookResponse = response.value else { return }
-                    completion(bookResponse, nil)
+                    guard let result = response.value else { return }
+                    completion(.success(result))
                 case let .failure(error):
-                    completion(nil, "Request failed with error: \(error)")
+                    completion(.failure(error))
                 }
         }
     }

@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct Book : ModelResponse {
+struct Book : Model {
     
     let trackId: Int
     let trackName: String

@@ -48,6 +48,16 @@
                ReferencedContainer = "container:BookSeeker.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "EC53B045246CBFA100C9C6D1"
+               BuildableName = "BookSeekerPresenterTests.xctest"
+               BlueprintName = "BookSeekerPresenterTests"
+               ReferencedContainer = "container:BookSeeker.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

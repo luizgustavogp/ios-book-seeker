@@ -9,9 +9,8 @@
 import Foundation
 
 
-typealias RequestCompletion = (_ result : BookResponse?, _ error: String?) -> Void
+typealias RequestCompletion = (Result<Data?, Error>) -> Void
 
-protocol NetworkService {
-    
+protocol NetworkService {    
     func get(url: URL, parameters: [String: Any]?, completion: @escaping RequestCompletion)
 }

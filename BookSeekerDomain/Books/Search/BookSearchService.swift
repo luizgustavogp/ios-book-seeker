@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class BookSearchApiService : BookSearch {
+public class BookSearchApiService : BookSearch {
     
     private let networkService : NetworkService
     
@@ -23,18 +23,24 @@ public final class BookSearchApiService : BookSearch {
     }
     
     func findByTerm(term: String, completion: @escaping BookCompletion) {
-        let parameters: [String: Any] = ["term": term, "entity": "ibook"]
-        
-        self.networkService.get(url:apiEndPoint("search"), parameters: parameters) { response, error in
-            completion(response, error)
-        }
+        self.get(url:apiEndPoint("search"), parameters: ["term": term, "entity": "ibook"], with: completion)
     }
     
     func findById(id: Int, completion: @escaping BookCompletion) {
-        let parameters: [String: Int] = ["id": id]
-        
-        self.networkService.get(url:apiEndPoint("lookup"), parameters: parameters){ response, error in
-            completion(response, error)
+        self.get(url : apiEndPoint("lookup"), parameters: ["id": id], with: completion);
+    }
+}
+
+extension BookSearchApiService {
+    
+    private func get(url : URL, parameters: [String: Any], with completion: @escaping BookCompletion) {
+        self.networkService.get(url:url, parameters: parameters){ result in
+            switch result {
+            case .success(let data):
+                completion(data?.toModel(), nil)
+            case .failure(let error):
+                completion(nil, error.localizedDescription)
+            }
         }
     }
 }
