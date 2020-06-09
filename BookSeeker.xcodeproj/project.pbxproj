@@ -64,6 +64,7 @@
 		EC8351162490459C0052D5F6 /* StringLocalizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E38A3244D032A009E533C /* StringLocalizeExtension.swift */; };
 		EC835117249045C70052D5F6 /* BookSeekerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; platformFilter = ios; };
 		EC835118249045C70052D5F6 /* BookSeekerDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC83511D24904AEE0052D5F6 /* BookSearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC83511C24904AEE0052D5F6 /* BookSearchDetailView.swift */; };
 		EC90199B24675CAF00BD662B /* BookSeekerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; };
 		EC9019A024675CAF00BD662B /* BookSeekerDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC90199F24675CAF00BD662B /* BookSeekerDomainTests.swift */; };
 		EC901A1A2467647300BD662B /* BookSeekerInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC901A112467647300BD662B /* BookSeekerInfrastructure.framework */; };
@@ -297,6 +298,7 @@
 		EC80FC45244B64C700CA0570 /* BookSearchViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchViewControllerDelegate.swift; sourceTree = "<group>"; };
 		EC80FC47244B6CF400CA0570 /* BookSearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResultViewController.swift; sourceTree = "<group>"; };
 		EC80FC49244BB97200CA0570 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		EC83511C24904AEE0052D5F6 /* BookSearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchDetailView.swift; sourceTree = "<group>"; };
 		EC90199224675CAE00BD662B /* BookSeekerDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BookSeekerDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC90199524675CAE00BD662B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC90199A24675CAF00BD662B /* BookSeekerDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSeekerDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -660,6 +662,7 @@
 			children = (
 				EC3E3895244C5CA6009E533C /* BookSearchDetailViewController.swift */,
 				EC53DD33245CE06400626E0C /* BookSearchDetailViewModel.swift */,
+				EC83511C24904AEE0052D5F6 /* BookSearchDetailView.swift */,
 			);
 			path = SearchDetail;
 			sourceTree = "<group>";
@@ -1280,6 +1283,7 @@
 				EC83510E2490424E0052D5F6 /* BookSearchViewModel.swift in Sources */,
 				EC83510F2490424E0052D5F6 /* BookSearchView.swift in Sources */,
 				EC8351102490424E0052D5F6 /* BookSearchViewControllerDelegate.swift in Sources */,
+				EC83511D24904AEE0052D5F6 /* BookSearchDetailView.swift in Sources */,
 				EC8351112490424E0052D5F6 /* BookSearchTextViewDelegate.swift in Sources */,
 				EC83510B2490423B0052D5F6 /* BookSearchDetailViewController.swift in Sources */,
 				EC83510C2490423B0052D5F6 /* BookSearchDetailViewModel.swift in Sources */,

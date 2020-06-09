@@ -6,8 +6,8 @@
 //  Copyright © 2020 CodeOfThings. All rights reserved.
 //
 
-import Foundation
 import RxSwift
+import Foundation
 import BookSeekerDomain 
 import BookSeekerApplication
 

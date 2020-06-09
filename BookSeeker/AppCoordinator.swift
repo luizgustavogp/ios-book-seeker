@@ -37,7 +37,7 @@ public class AppCoordinator : Coordinator {
         
         let rootViewController = resolver.resolve(BookSearchViewController.self)!
         rootViewController.bookSearchViewControllerDelegate = self
-              
+        
         self.navigationController.pushViewController(rootViewController, animated: true)
     }
 }
@@ -45,11 +45,14 @@ public class AppCoordinator : Coordinator {
 
 extension AppCoordinator : BookSearchViewControllerDelegate{
     public func didSearch(_ term: String) {
-        let network : AlamofireHttpGetService = AlamofireHttpGetService()
-        let bookServiceApi = BookSearchService(networkService: network)
-        let bookSearchResultViewModel = BookSearchResultViewModel(bookSearch: bookServiceApi)
-        let bookSearchResultViewController = BookSearchResultViewController(bookSearchResultViewModel: bookSearchResultViewModel, term: term)
+        let bookSearchResultViewController = resolver.resolve(BookSearchResultViewController.self, argument: term)!
         
         self.navigationController.pushViewController(bookSearchResultViewController, animated: true)
+    }
+    
+    public func didDetail(_ bookId: Int) {
+        let bookSearchDetailViewController = resolver.resolve(BookSearchDetailViewController.self, argument: bookId)!
+        
+        self.navigationController.pushViewController(bookSearchDetailViewController, animated: true)
     }
 }

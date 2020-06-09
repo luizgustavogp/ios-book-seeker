@@ -10,12 +10,10 @@ import Foundation
 
 public final class BookSearchViewModel {
     
-    public init(){
-        
+    public init() {
     }    
     
-    func addSearch(term : String)  {
-        
+    func addSearch(term : String)  {        
     }
     
     func termIsValid(term : String?) -> Bool {

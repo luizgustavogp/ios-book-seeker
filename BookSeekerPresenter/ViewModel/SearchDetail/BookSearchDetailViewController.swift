@@ -9,12 +9,7 @@
 import UIKit
 import RxSwift
 
-public class BookSearchDetailViewController: UIViewController {
-    
-    @IBOutlet weak var lbTitle: UILabel!
-    @IBOutlet weak var lbPrice: UILabel!
-    @IBOutlet weak var lbArtist: UILabel!
-    @IBOutlet weak var lbDescription: UILabel!
+public class BookSearchDetailViewController: CustomViewController<BookSearchDetailView> {
     
     private var bookSearchDetailViewModel: BookSearchDetailViewModel?
     
@@ -39,18 +34,12 @@ public class BookSearchDetailViewController: UIViewController {
     func setupBookObserver() {
         self.bookSearchDetailViewModel?.bookObservable
             .subscribe(onNext: { response in
-                
                 if response.bookResponse?.resultCount == 0 {
                     self.alert(title: "alert".localized(), message: "book_not_found".localized());  return
                 }
-                
                 guard let results = response.bookResponse?.results else { return }
                 
-                let book = results.first
-                self.lbTitle.text = book?.trackName
-                self.lbPrice.text = book?.formattedPrice
-                self.lbArtist.text = book?.artistName
-                self.lbDescription.text = book?.description
+                self.customView.configure(rowBook: results.first)
                 
             }).disposed(by: disposeBag)
     }

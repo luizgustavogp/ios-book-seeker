@@ -12,20 +12,6 @@ import BookSeekerDomain
 
 class BookCell : UITableViewCell {    
     
-    func configureCell(rowBook : Book?){
-        if let book: Book = rowBook {
-            
-            setupControls()
-            setupLayoutConstraint()
-            
-            let url = URL(string: book.artworkUrl100)
-            
-            self.imgThumb.kf.setImage(with : url)
-            self.lbTitle.text = book.trackName
-            self.lbArtist.text = book.artistName
-        }
-    }
-    
     private lazy var imgThumb: UIImageView = {
         let imgThumb = UIImageView(frame: .zero)
         imgThumb.translatesAutoresizingMaskIntoConstraints = false
@@ -59,7 +45,7 @@ class BookCell : UITableViewCell {
             imgThumb.heightAnchor.constraint(equalToConstant: 100),
             imgThumb.safeTopAnchor.constraint(equalTo: safeTopAnchor, constant: 10),
             imgThumb.safeLeftAnchor.constraint(equalTo: safeLeftAnchor, constant: 10),
-           
+            
             lbTitle.safeTopAnchor.constraint(equalTo: imgThumb.safeTopAnchor, constant: 5),
             lbTitle.safeLeftAnchor.constraint(equalTo: imgThumb.safeRightAnchor, constant: 10),
             lbTitle.safeRightAnchor.constraint(equalTo: safeRightAnchor, constant: -10),
@@ -69,4 +55,15 @@ class BookCell : UITableViewCell {
             lbArtist.safeRightAnchor.constraint(equalTo: safeRightAnchor, constant: -10)
         ])
     }
+    
+    func configureCell(rowBook : Book?){
+          if let book: Book = rowBook {
+              setupControls()
+              setupLayoutConstraint()
+              
+              self.imgThumb.kf.setImage(with : URL(string: book.artworkUrl100))
+              self.lbTitle.text = book.trackName
+              self.lbArtist.text = book.artistName
+          }
+      }
 }
