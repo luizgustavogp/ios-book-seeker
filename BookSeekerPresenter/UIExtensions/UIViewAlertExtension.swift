@@ -11,7 +11,7 @@ import UIKit
 
 
 extension UIViewController {
-    func alert(title: String, message: String){
+    public func alert(title: String, message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let cancel = UIAlertAction(title: "cancel".localized(), style: .cancel, handler: nil)
         alert.addAction( cancel )

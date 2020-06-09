@@ -4,14 +4,19 @@ target 'BookSeeker' do
   use_frameworks!
   pod 'Swinject'
   pod 'SwiftLint'
-  pod 'RxSwift'
-  pod 'RxCocoa'
-  pod 'Kingfisher'
 end
 
 target 'BookSeekerInfrastructure' do
   use_frameworks!
   pod 'Alamofire', '~> 5.1'
+end
+
+target 'BookSeekerPresenter' do
+  use_frameworks!
+  pod 'Swinject'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'Kingfisher'
 end
 
 target 'BookSeekerTests' do

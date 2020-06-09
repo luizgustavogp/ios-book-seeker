@@ -24,7 +24,7 @@ public class BookSearchDetailViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    init(bookSearchDetailViewModel : BookSearchDetailViewModel, bookId : Int) {
+    public init(bookSearchDetailViewModel : BookSearchDetailViewModel, bookId : Int) {
         super.init(nibName: nil, bundle: nil)
         
         self.bookSearchDetailViewModel = bookSearchDetailViewModel

@@ -10,7 +10,7 @@ import UIKit
 import RxSwift
 import BookSeekerDomain
 
-class BookSearchResultViewController: UITableViewController  {
+public class BookSearchResultViewController: UITableViewController  {
     
     private let ceelIdentitier = "reusableBookCell";
     
@@ -20,7 +20,7 @@ class BookSearchResultViewController: UITableViewController  {
     
     private let disposeBag = DisposeBag()
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "book_search_result_view_title".localized()
@@ -28,7 +28,7 @@ class BookSearchResultViewController: UITableViewController  {
         tableView.register(BookCell.self, forCellReuseIdentifier: ceelIdentitier)
     }
     
-    init(bookSearchResultViewModel : BookSearchResultViewModel, term : String){
+    public init(bookSearchResultViewModel : BookSearchResultViewModel, term : String){
         super.init(nibName: nil, bundle: nil)
         
         self.bookSearchResultViewModel = bookSearchResultViewModel
@@ -55,11 +55,11 @@ class BookSearchResultViewController: UITableViewController  {
             }).disposed(by: disposeBag)
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.books?.count ?? 0
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ceelIdentitier, for: indexPath)
             as? BookCell else {

@@ -8,8 +8,12 @@
 
 import Foundation
 
-final class BookSearchViewModel {
-   
+public final class BookSearchViewModel {
+    
+    public init(){
+        
+    }    
+    
     func addSearch(term : String)  {
         
     }

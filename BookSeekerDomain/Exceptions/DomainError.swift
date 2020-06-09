@@ -9,6 +9,5 @@
 import Foundation
 
 public class DomainError : Error
-{
-    
+{    
 }

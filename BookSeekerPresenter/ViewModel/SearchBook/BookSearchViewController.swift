@@ -8,40 +8,35 @@
 
 import UIKit
 
-final class BookSearchViewController: CustomViewController<BookSearchView> {
+public final class BookSearchViewController: CustomViewController<BookSearchView> {
     
     private var viewModelBookSearch: BookSearchViewModel!
     
     //Why it can't be weak?
-    weak var bookSearchViewControllerDelegate : BookSearchViewControllerDelegate?
+    public var bookSearchViewControllerDelegate : BookSearchViewControllerDelegate?
     
-    override func loadView() {
+    public override func loadView() {
         super.loadView()
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.title = "book_search_view_title".localized()
-        
     }
     
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         self.customView.searchDeletegate = self
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    public override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
-    init(viewModelBookSearch : BookSearchViewModel){
-        
+    public init(viewModelBookSearch : BookSearchViewModel){
         self.viewModelBookSearch = viewModelBookSearch
-        
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -51,7 +46,7 @@ final class BookSearchViewController: CustomViewController<BookSearchView> {
 }
 
 extension BookSearchViewController : BookSearchTextViewDelegate {
-    func didSearch(_ term: String) {
+    public func didSearch(_ term: String) {
         
         if(!self.viewModelBookSearch.termIsValid(term: term))
         {

@@ -9,6 +9,7 @@
 import Swinject
 import BookSeekerDomain
 import BookSeekerApplication
+import BookSeekerPresenter
 
 
 public final class UseCaseAssembly : Assembly{

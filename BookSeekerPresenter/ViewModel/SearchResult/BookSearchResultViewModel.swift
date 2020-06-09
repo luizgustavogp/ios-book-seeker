@@ -13,13 +13,13 @@ import BookSeekerApplication
 
 
 
-final class BookSearchResultViewModel {
+public final class BookSearchResultViewModel {
     
     private var bookSearch : BookSearchService?;
     
     let bookObservable = PublishSubject<BookViewModelCompletion>()
     
-    init(bookSearch : BookSearchService) {
+    public init(bookSearch : BookSearchService) {
         self.bookSearch = bookSearch;
     }
     

@@ -8,13 +8,13 @@
 
 import UIKit
 
-class CustomViewController<CustomView: UIView>: UIViewController {
+public class CustomViewController<CustomView: UIView>: UIViewController {
     
     var customView: CustomView {
         return view as! CustomView
     }
 
-    override func loadView() {
+    public override func loadView() {
         view = CustomView()
     }
 }

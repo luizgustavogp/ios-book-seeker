@@ -11,6 +11,7 @@ import Swinject
 import BookSeekerDomain
 import BookSeekerApplication
 import BookSeekerInfrastructure
+import BookSeekerPresenter
 
 protocol Coordinator {
     
