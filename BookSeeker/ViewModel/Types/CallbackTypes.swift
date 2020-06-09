@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import BookSeekerDomain
 
 
-typealias BookViewModelCompletion = (bookResponse: BookResponse?, error: String?)
+public typealias BookViewModelCompletion = (bookResponse: BookResponse?, error: String?)

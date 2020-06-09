@@ -7,6 +7,9 @@
 //
 
 import Swinject
+import BookSeekerDomain
+import BookSeekerApplication
+
 
 public final class UseCaseAssembly : Assembly{
     
@@ -22,7 +25,7 @@ public final class UseCaseAssembly : Assembly{
         }
         
         container.register(BookSearchResultViewModel.self) {r in
-            let bookSearchApi = r.resolve(BookSearch.self)!
+            let bookSearchApi = r.resolve(BookSearchService.self)!
             return BookSearchResultViewModel(bookSearch: bookSearchApi)
         }
         
@@ -32,7 +35,7 @@ public final class UseCaseAssembly : Assembly{
         }
         
         container.register(BookSearchDetailViewModel.self) {r in
-            let bookSearchApi = r.resolve(BookSearch.self)!
+            let bookSearchApi = r.resolve(BookSearchService.self)!
             return BookSearchDetailViewModel(bookSearch: bookSearchApi)
         }
         

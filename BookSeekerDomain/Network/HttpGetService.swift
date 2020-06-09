@@ -8,9 +8,6 @@
 
 import Foundation
 
-
-typealias RequestCompletion = (Result<Data?, Error>) -> Void
-
-protocol NetworkService {    
+public protocol HttpGetService {    
     func get(url: URL, parameters: [String: Any]?, completion: @escaping RequestCompletion)
 }

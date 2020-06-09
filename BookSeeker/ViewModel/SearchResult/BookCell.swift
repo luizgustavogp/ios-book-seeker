@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import BookSeekerDomain
 
 class BookCell : UITableViewCell {    
     

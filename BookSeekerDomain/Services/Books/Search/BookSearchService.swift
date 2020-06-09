@@ -7,9 +7,9 @@
 
 import Foundation
 
-public class BookSearchApiService : BookSearch {
+public class BookSearchService {
     
-    private let networkService : NetworkService
+    private let networkService : HttpGetService
     
     private let apiEndPoint:(String) -> URL = { (path:String) -> URL in
         guard let url = URL(string: "https://itunes.apple.com/\(path)") else {
@@ -18,20 +18,20 @@ public class BookSearchApiService : BookSearch {
         return url
     }
     
-    init(networkService : NetworkService) {
+    public init(networkService : HttpGetService) {
         self.networkService = networkService
     }
     
-    func findByTerm(term: String, completion: @escaping BookCompletion) {
+    public func findByTerm(term: String, completion: @escaping BookCompletion) {
         self.get(url:apiEndPoint("search"), parameters: ["term": term, "entity": "ibook"], with: completion)
     }
     
-    func findById(id: Int, completion: @escaping BookCompletion) {
+    public func findById(id: Int, completion: @escaping BookCompletion) {
         self.get(url : apiEndPoint("lookup"), parameters: ["id": id], with: completion);
     }
 }
 
-extension BookSearchApiService {
+extension BookSearchService {
     
     private func get(url : URL, parameters: [String: Any], with completion: @escaping BookCompletion) {
         self.networkService.get(url:url, parameters: parameters){ result in

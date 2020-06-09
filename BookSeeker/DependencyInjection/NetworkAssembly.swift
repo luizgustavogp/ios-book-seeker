@@ -8,12 +8,14 @@
 
 
 import Swinject
+import BookSeekerDomain 
+import BookSeekerInfrastructure
 
 public class NetworkAssembly : Assembly{
     
     public func assemble(container: Container) {
-        container.register(NetworkService.self) {_ in
-            return AlamofireNetworkService()
+        container.register(HttpGetService.self) {_ in
+            return AlamofireHttpGetService()
         }
     }    
 }

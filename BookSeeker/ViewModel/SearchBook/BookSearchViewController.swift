@@ -13,7 +13,7 @@ final class BookSearchViewController: CustomViewController<BookSearchView> {
     private var viewModelBookSearch: BookSearchViewModel!
     
     //Why it can't be weak?
-    var bookSearchViewControllerDelegate : BookSearchViewControllerDelegate?
+    weak var bookSearchViewControllerDelegate : BookSearchViewControllerDelegate?
     
     override func loadView() {
         super.loadView()
@@ -23,6 +23,7 @@ final class BookSearchViewController: CustomViewController<BookSearchView> {
         super.viewDidLoad()
         
         self.title = "book_search_view_title".localized()
+        
     }
     
     public override func viewWillAppear(_ animated: Bool) {

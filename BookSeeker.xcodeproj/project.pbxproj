@@ -7,12 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3768B4637C9A1027086F5E1E /* Pods_BookSeeker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E38903BB9252A43E8BDC9E12 /* Pods_BookSeeker.framework */; };
 		4302D5ACD3024E3B1993A533 /* Pods_BookSeekerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CE532B43EBC3675649B52F8 /* Pods_BookSeekerTests.framework */; };
+		EC35EDF32482D084006FFACF /* DomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC35EDF22482D084006FFACF /* DomainError.swift */; };
+		EC35EE0A2482DA00006FFACF /* BookSeekerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; };
+		EC35EE0B2482DA00006FFACF /* BookSeekerDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC35EE112482EBF9006FFACF /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC3A244A73BE00CA0570 /* Model.swift */; };
+		EC35EE202482EC95006FFACF /* BookSeekerApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC35EE172482EC95006FFACF /* BookSeekerApplication.framework */; };
+		EC35EE252482EC95006FFACF /* BookSeekerApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC35EE242482EC95006FFACF /* BookSeekerApplicationTests.swift */; };
+		EC35EE272482EC95006FFACF /* BookSeekerApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = EC35EE192482EC95006FFACF /* BookSeekerApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC35EE312482ECF1006FFACF /* BookSeekerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; };
+		EC35EE322482ECF1006FFACF /* BookSeekerDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC35EE352482ECF1006FFACF /* BookSeekerInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC901A112467647300BD662B /* BookSeekerInfrastructure.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		EC35EE362482ECF1006FFACF /* BookSeekerInfrastructure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC901A112467647300BD662B /* BookSeekerInfrastructure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC35EE3A2482EDB7006FFACF /* BookSeekerApplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC35EE172482EC95006FFACF /* BookSeekerApplication.framework */; };
+		EC35EE3B2482EDB7006FFACF /* BookSeekerApplication.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC35EE172482EC95006FFACF /* BookSeekerApplication.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC35EE3E2482EDC0006FFACF /* BookSeekerInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC901A112467647300BD662B /* BookSeekerInfrastructure.framework */; };
+		EC35EE3F2482EDC0006FFACF /* BookSeekerInfrastructure.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC901A112467647300BD662B /* BookSeekerInfrastructure.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EC35EE432482EE70006FFACF /* AlamofireHttpGetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC34244A406100CA0570 /* AlamofireHttpGetService.swift */; };
+		EC35EE4B2482F200006FFACF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC35EE4A2482F200006FFACF /* Alamofire.framework */; };
+		EC35EE582482F77A006FFACF /* BookCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC35EE572482F77A006FFACF /* BookCompletion.swift */; };
+		EC35EE60248322DB006FFACF /* BookSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC35EE5E248322DA006FFACF /* BookSearchService.swift */; };
 		EC3E3896244C5CA6009E533C /* BookSearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E3895244C5CA6009E533C /* BookSearchDetailViewController.swift */; };
 		EC3E389D244C691E009E533C /* CallbackTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E389C244C691E009E533C /* CallbackTypes.swift */; };
 		EC3E38A1244D00AA009E533C /* UIViewAlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E38A0244D00AA009E533C /* UIViewAlertExtension.swift */; };
 		EC3E38A4244D032A009E533C /* StringLocalizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E38A3244D032A009E533C /* StringLocalizeExtension.swift */; };
 		EC3E38B1244D0C4C009E533C /* BookSearchServiceIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3E38B0244D0C4C009E533C /* BookSearchServiceIntegrationTests.swift */; };
+		EC488EDF2483245200EFF355 /* HttpGetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC32244A402400CA0570 /* HttpGetService.swift */; };
+		EC488EE3248324EB00EFF355 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488EE1248324EB00EFF355 /* Book.swift */; };
+		EC488EE4248324EB00EFF355 /* BookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488EE2248324EB00EFF355 /* BookResponse.swift */; };
+		EC488EE62483271000EFF355 /* RequestCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC488EE52483271000EFF355 /* RequestCompletion.swift */; };
 		EC4CF8EF245A2F2E00948743 /* UICustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CF8EE245A2F2E00948743 /* UICustomView.swift */; };
 		EC4CF8F1245A407B00948743 /* BookSearchTextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CF8F0245A407B00948743 /* BookSearchTextViewDelegate.swift */; };
 		EC4CF8F3245A47A300948743 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CF8F2245A47A300948743 /* AppCoordinator.swift */; };
@@ -27,15 +51,8 @@
 		EC5B4375244911E600EC0E7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B4374244911E600EC0E7B /* AppDelegate.swift */; };
 		EC5B4377244911E600EC0E7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B4376244911E600EC0E7B /* SceneDelegate.swift */; };
 		EC5B4381244911EA00EC0E7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC5B437F244911EA00EC0E7B /* LaunchScreen.storyboard */; };
-		EC80FC262449265F00CA0570 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC252449265F00CA0570 /* Book.swift */; };
-		EC80FC28244927CC00CA0570 /* BookSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC27244927CC00CA0570 /* BookSearchService.swift */; };
-		EC80FC2A244927FE00CA0570 /* BookSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC29244927FE00CA0570 /* BookSearch.swift */; };
 		EC80FC2D2449346A00CA0570 /* BookSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC2C2449346A00CA0570 /* BookSearchViewModel.swift */; };
 		EC80FC31244939EF00CA0570 /* BookSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC30244939EF00CA0570 /* BookSearchViewController.swift */; };
-		EC80FC33244A402400CA0570 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC32244A402400CA0570 /* NetworkService.swift */; };
-		EC80FC35244A406100CA0570 /* AlamofireNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC34244A406100CA0570 /* AlamofireNetworkService.swift */; };
-		EC80FC39244A71E500CA0570 /* BookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC38244A71E500CA0570 /* BookResponse.swift */; };
-		EC80FC3B244A73BE00CA0570 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC3A244A73BE00CA0570 /* Model.swift */; };
 		EC80FC43244B638000CA0570 /* BookSearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC42244B638000CA0570 /* BookSearchResultViewModel.swift */; };
 		EC80FC46244B64C700CA0570 /* BookSearchViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC45244B64C700CA0570 /* BookSearchViewControllerDelegate.swift */; };
 		EC80FC48244B6CF400CA0570 /* BookSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC47244B6CF400CA0570 /* BookSearchResultViewController.swift */; };
@@ -43,7 +60,6 @@
 		EC90199B24675CAF00BD662B /* BookSeekerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; };
 		EC9019A024675CAF00BD662B /* BookSeekerDomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC90199F24675CAF00BD662B /* BookSeekerDomainTests.swift */; };
 		EC901A1A2467647300BD662B /* BookSeekerInfrastructure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC901A112467647300BD662B /* BookSeekerInfrastructure.framework */; };
-		EC901A2E2467678F00BD662B /* BookSeekerDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; };
 		EC901A2F2467678F00BD662B /* BookSeekerDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC90199224675CAE00BD662B /* BookSeekerDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC901A332467683E00BD662B /* AlamofireNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC80FC3D244B28E400CA0570 /* AlamofireNetworkTests.swift */; };
 		EC9B3E8624544EEA008ED9BA /* BookSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9B3E8524544EEA008ED9BA /* BookSearchView.swift */; };
@@ -52,6 +68,48 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EC35EE0C2482DA00006FFACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5B4369244911E600EC0E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC90199124675CAE00BD662B;
+			remoteInfo = BookSeekerDomain;
+		};
+		EC35EE212482EC95006FFACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5B4369244911E600EC0E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC35EE162482EC95006FFACF;
+			remoteInfo = BookSeekerApplication;
+		};
+		EC35EE332482ECF1006FFACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5B4369244911E600EC0E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC90199124675CAE00BD662B;
+			remoteInfo = BookSeekerDomain;
+		};
+		EC35EE372482ECF1006FFACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5B4369244911E600EC0E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC901A102467647300BD662B;
+			remoteInfo = BookSeekerInfrastructure;
+		};
+		EC35EE3C2482EDB7006FFACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5B4369244911E600EC0E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC35EE162482EC95006FFACF;
+			remoteInfo = BookSeekerApplication;
+		};
+		EC35EE402482EDC0006FFACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC5B4369244911E600EC0E7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC901A102467647300BD662B;
+			remoteInfo = BookSeekerInfrastructure;
+		};
 		EC53B048246CBFA100C9C6D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EC5B4369244911E600EC0E7B /* Project object */;
@@ -67,13 +125,6 @@
 			remoteInfo = BookSeeker;
 		};
 		EC5B4388244911EA00EC0E7B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC5B4369244911E600EC0E7B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EC5B4370244911E600EC0E7B;
-			remoteInfo = BookSeeker;
-		};
-		EC5B4393244911EA00EC0E7B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EC5B4369244911E600EC0E7B /* Project object */;
 			proxyType = 1;
@@ -104,6 +155,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		EC35EE0E2482DA00006FFACF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC35EE3F2482EDC0006FFACF /* BookSeekerInfrastructure.framework in Embed Frameworks */,
+				EC35EE0B2482DA00006FFACF /* BookSeekerDomain.framework in Embed Frameworks */,
+				EC35EE3B2482EDB7006FFACF /* BookSeekerApplication.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC35EE392482ECF1006FFACF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EC35EE322482ECF1006FFACF /* BookSeekerDomain.framework in Embed Frameworks */,
+				EC35EE362482ECF1006FFACF /* BookSeekerInfrastructure.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC53DDB62462347200626E0C /* Embed PlugIns */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,16 +205,31 @@
 
 /* Begin PBXFileReference section */
 		0CE532B43EBC3675649B52F8 /* Pods_BookSeekerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookSeekerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C1D1A213E426863857E1374 /* Pods-BookSeekerInfrastructure.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeekerInfrastructure.debug.xcconfig"; path = "Target Support Files/Pods-BookSeekerInfrastructure/Pods-BookSeekerInfrastructure.debug.xcconfig"; sourceTree = "<group>"; };
 		3E6AC713820FF92D48E170E7 /* Pods-BookSeeker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeeker.debug.xcconfig"; path = "Target Support Files/Pods-BookSeeker/Pods-BookSeeker.debug.xcconfig"; sourceTree = "<group>"; };
+		6F75F2ADFA5278EECEBBE690 /* Pods-BookSeekerInfrastructure.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeekerInfrastructure.release.xcconfig"; path = "Target Support Files/Pods-BookSeekerInfrastructure/Pods-BookSeekerInfrastructure.release.xcconfig"; sourceTree = "<group>"; };
 		93DCA9FC93B824D24B5AFCBB /* Pods-BookSeeker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeeker.release.xcconfig"; path = "Target Support Files/Pods-BookSeeker/Pods-BookSeeker.release.xcconfig"; sourceTree = "<group>"; };
 		B6457D06F4611A3219B31560 /* Pods-BookSeekerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeekerTests.release.xcconfig"; path = "Target Support Files/Pods-BookSeekerTests/Pods-BookSeekerTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC7C3AD26BFE6025BFC0B4D0 /* Pods-BookSeekerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BookSeekerTests.debug.xcconfig"; path = "Target Support Files/Pods-BookSeekerTests/Pods-BookSeekerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E38903BB9252A43E8BDC9E12 /* Pods_BookSeeker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookSeeker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC35EDF22482D084006FFACF /* DomainError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainError.swift; sourceTree = "<group>"; };
+		EC35EE172482EC95006FFACF /* BookSeekerApplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BookSeekerApplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC35EE192482EC95006FFACF /* BookSeekerApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookSeekerApplication.h; sourceTree = "<group>"; };
+		EC35EE1A2482EC95006FFACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC35EE1F2482EC95006FFACF /* BookSeekerApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSeekerApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC35EE242482EC95006FFACF /* BookSeekerApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeekerApplicationTests.swift; sourceTree = "<group>"; };
+		EC35EE262482EC95006FFACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC35EE4A2482F200006FFACF /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC35EE572482F77A006FFACF /* BookCompletion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookCompletion.swift; sourceTree = "<group>"; };
+		EC35EE5E248322DA006FFACF /* BookSearchService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookSearchService.swift; sourceTree = "<group>"; };
 		EC3E3895244C5CA6009E533C /* BookSearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchDetailViewController.swift; sourceTree = "<group>"; };
 		EC3E389C244C691E009E533C /* CallbackTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallbackTypes.swift; sourceTree = "<group>"; };
 		EC3E38A0244D00AA009E533C /* UIViewAlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewAlertExtension.swift; sourceTree = "<group>"; };
 		EC3E38A3244D032A009E533C /* StringLocalizeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalizeExtension.swift; sourceTree = "<group>"; };
 		EC3E38B0244D0C4C009E533C /* BookSearchServiceIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchServiceIntegrationTests.swift; sourceTree = "<group>"; };
+		EC488EE1248324EB00EFF355 /* Book.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		EC488EE2248324EB00EFF355 /* BookResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookResponse.swift; sourceTree = "<group>"; };
+		EC488EE52483271000EFF355 /* RequestCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCompletion.swift; sourceTree = "<group>"; };
 		EC4CF8EE245A2F2E00948743 /* UICustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICustomView.swift; sourceTree = "<group>"; };
 		EC4CF8F0245A407B00948743 /* BookSearchTextViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchTextViewDelegate.swift; sourceTree = "<group>"; };
 		EC4CF8F2245A47A300948743 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -161,15 +252,10 @@
 		EC5B4382244911EA00EC0E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC5B4387244911EA00EC0E7B /* BookSeekerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSeekerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5B438D244911EA00EC0E7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC5B4392244911EA00EC0E7B /* BookSeekerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSeekerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC80FC252449265F00CA0570 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
-		EC80FC27244927CC00CA0570 /* BookSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchService.swift; sourceTree = "<group>"; };
-		EC80FC29244927FE00CA0570 /* BookSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearch.swift; sourceTree = "<group>"; };
 		EC80FC2C2449346A00CA0570 /* BookSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchViewModel.swift; sourceTree = "<group>"; };
 		EC80FC30244939EF00CA0570 /* BookSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchViewController.swift; sourceTree = "<group>"; };
-		EC80FC32244A402400CA0570 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		EC80FC34244A406100CA0570 /* AlamofireNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkService.swift; sourceTree = "<group>"; };
-		EC80FC38244A71E500CA0570 /* BookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookResponse.swift; sourceTree = "<group>"; };
+		EC80FC32244A402400CA0570 /* HttpGetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpGetService.swift; sourceTree = "<group>"; };
+		EC80FC34244A406100CA0570 /* AlamofireHttpGetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireHttpGetService.swift; sourceTree = "<group>"; };
 		EC80FC3A244A73BE00CA0570 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EC80FC3D244B28E400CA0570 /* AlamofireNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkTests.swift; sourceTree = "<group>"; };
 		EC80FC42244B638000CA0570 /* BookSearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchResultViewModel.swift; sourceTree = "<group>"; };
@@ -190,9 +276,27 @@
 		ECFA07AC2454F0AD000FBFF4 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		ECFA07B42454F2B2000FBFF4 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		ECFA07B52454F2B5000FBFF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F2B14FE39B985DF4BF9FA23B /* Pods_BookSeekerInfrastructure.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookSeekerInfrastructure.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EC35EE142482EC95006FFACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC35EE312482ECF1006FFACF /* BookSeekerDomain.framework in Frameworks */,
+				EC35EE352482ECF1006FFACF /* BookSeekerInfrastructure.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC35EE1C2482EC95006FFACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC35EE202482EC95006FFACF /* BookSeekerApplication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC53B03B246CBFA100C9C6D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,6 +316,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC35EE0A2482DA00006FFACF /* BookSeekerDomain.framework in Frameworks */,
+				EC35EE3E2482EDC0006FFACF /* BookSeekerInfrastructure.framework in Frameworks */,
+				3768B4637C9A1027086F5E1E /* Pods_BookSeeker.framework in Frameworks */,
+				EC35EE3A2482EDB7006FFACF /* BookSeekerApplication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,13 +328,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4302D5ACD3024E3B1993A533 /* Pods_BookSeekerTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC5B438F244911EA00EC0E7B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,7 +350,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC901A2E2467678F00BD662B /* BookSeekerDomain.framework in Frameworks */,
+				EC35EE4B2482F200006FFACF /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +368,10 @@
 		1F007F678F1E994670F70253 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC35EE4A2482F200006FFACF /* Alamofire.framework */,
 				E38903BB9252A43E8BDC9E12 /* Pods_BookSeeker.framework */,
 				0CE532B43EBC3675649B52F8 /* Pods_BookSeekerTests.framework */,
+				F2B14FE39B985DF4BF9FA23B /* Pods_BookSeekerInfrastructure.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -280,8 +383,53 @@
 				93DCA9FC93B824D24B5AFCBB /* Pods-BookSeeker.release.xcconfig */,
 				CC7C3AD26BFE6025BFC0B4D0 /* Pods-BookSeekerTests.debug.xcconfig */,
 				B6457D06F4611A3219B31560 /* Pods-BookSeekerTests.release.xcconfig */,
+				3C1D1A213E426863857E1374 /* Pods-BookSeekerInfrastructure.debug.xcconfig */,
+				6F75F2ADFA5278EECEBBE690 /* Pods-BookSeekerInfrastructure.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EC35EDF12482D063006FFACF /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				EC35EDF22482D084006FFACF /* DomainError.swift */,
+			);
+			path = Exceptions;
+			sourceTree = "<group>";
+		};
+		EC35EE182482EC95006FFACF /* BookSeekerApplication */ = {
+			isa = PBXGroup;
+			children = (
+				EC35EE2E2482ECAD006FFACF /* UseCases */,
+				EC35EE192482EC95006FFACF /* BookSeekerApplication.h */,
+				EC35EE1A2482EC95006FFACF /* Info.plist */,
+			);
+			path = BookSeekerApplication;
+			sourceTree = "<group>";
+		};
+		EC35EE232482EC95006FFACF /* BookSeekerApplicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC35EE242482EC95006FFACF /* BookSeekerApplicationTests.swift */,
+				EC35EE262482EC95006FFACF /* Info.plist */,
+			);
+			path = BookSeekerApplicationTests;
+			sourceTree = "<group>";
+		};
+		EC35EE2E2482ECAD006FFACF /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		EC35EE5C248322DA006FFACF /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				EC35EE5E248322DA006FFACF /* BookSearchService.swift */,
+				EC35EE572482F77A006FFACF /* BookCompletion.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		EC3E389B244C68D9009E533C /* Types */ = {
@@ -308,6 +456,39 @@
 			path = BookServiceTests;
 			sourceTree = "<group>";
 		};
+		EC488EDE2483240100EFF355 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EC488EE52483271000EFF355 /* RequestCompletion.swift */,
+				EC80FC32244A402400CA0570 /* HttpGetService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EC488EE0248324EB00EFF355 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				EC488EE1248324EB00EFF355 /* Book.swift */,
+				EC488EE2248324EB00EFF355 /* BookResponse.swift */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		EC488EE72484415500EFF355 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EC9019AE24675E2A00BD662B /* Books */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EC488EE82484417600EFF355 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
 		EC4CF8ED245A251300948743 /* UIExtensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,15 +497,6 @@
 				EC4CF8EE245A2F2E00948743 /* UICustomView.swift */,
 			);
 			path = UIExtensions;
-			sourceTree = "<group>";
-		};
-		EC50CFB52481EB93000AD0A0 /* Book */ = {
-			isa = PBXGroup;
-			children = (
-				EC80FC252449265F00CA0570 /* Book.swift */,
-				EC80FC38244A71E500CA0570 /* BookResponse.swift */,
-			);
-			path = Book;
 			sourceTree = "<group>";
 		};
 		EC53B03F246CBFA100C9C6D1 /* BookSeekerPresenter */ = {
@@ -367,6 +539,8 @@
 				EC901A1D2467647300BD662B /* BookSeekerInfrastructureTests */,
 				EC53B03F246CBFA100C9C6D1 /* BookSeekerPresenter */,
 				EC53B04C246CBFA100C9C6D1 /* BookSeekerPresenterTests */,
+				EC35EE182482EC95006FFACF /* BookSeekerApplication */,
+				EC35EE232482EC95006FFACF /* BookSeekerApplicationTests */,
 				EC5B4372244911E600EC0E7B /* Products */,
 				BB8BA720DA03C5D1E9ABEE69 /* Pods */,
 				1F007F678F1E994670F70253 /* Frameworks */,
@@ -378,13 +552,14 @@
 			children = (
 				EC5B4371244911E600EC0E7B /* BookSeeker.app */,
 				EC5B4387244911EA00EC0E7B /* BookSeekerTests.xctest */,
-				EC5B4392244911EA00EC0E7B /* BookSeekerUITests.xctest */,
 				EC90199224675CAE00BD662B /* BookSeekerDomain.framework */,
 				EC90199A24675CAF00BD662B /* BookSeekerDomainTests.xctest */,
 				EC901A112467647300BD662B /* BookSeekerInfrastructure.framework */,
 				EC901A192467647300BD662B /* BookSeekerInfrastructureTests.xctest */,
 				EC53B03E246CBFA100C9C6D1 /* BookSeekerPresenter.framework */,
 				EC53B046246CBFA100C9C6D1 /* BookSeekerPresenterTests.xctest */,
+				EC35EE172482EC95006FFACF /* BookSeekerApplication.framework */,
+				EC35EE1F2482EC95006FFACF /* BookSeekerApplicationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -461,8 +636,11 @@
 		EC90199324675CAE00BD662B /* BookSeekerDomain */ = {
 			isa = PBXGroup;
 			children = (
+				EC488EE82484417600EFF355 /* UseCases */,
+				EC488EDE2483240100EFF355 /* Network */,
+				EC488EE72484415500EFF355 /* Services */,
+				EC35EDF12482D063006FFACF /* Exceptions */,
 				EC9019B7246761DE00BD662B /* Models */,
-				EC9019AE24675E2A00BD662B /* Books */,
 				EC90199524675CAE00BD662B /* Info.plist */,
 			);
 			path = BookSeekerDomain;
@@ -480,24 +658,15 @@
 		EC9019AE24675E2A00BD662B /* Books */ = {
 			isa = PBXGroup;
 			children = (
-				EC9019AF24675E7600BD662B /* Search */,
+				EC35EE5C248322DA006FFACF /* Search */,
 			);
 			path = Books;
-			sourceTree = "<group>";
-		};
-		EC9019AF24675E7600BD662B /* Search */ = {
-			isa = PBXGroup;
-			children = (
-				EC80FC27244927CC00CA0570 /* BookSearchService.swift */,
-				EC80FC29244927FE00CA0570 /* BookSearch.swift */,
-			);
-			path = Search;
 			sourceTree = "<group>";
 		};
 		EC9019B7246761DE00BD662B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EC50CFB52481EB93000AD0A0 /* Book */,
+				EC488EE0248324EB00EFF355 /* Books */,
 				EC80FC3A244A73BE00CA0570 /* Model.swift */,
 			);
 			path = Models;
@@ -524,8 +693,7 @@
 		EC901A28246764C200BD662B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				EC80FC32244A402400CA0570 /* NetworkService.swift */,
-				EC80FC34244A406100CA0570 /* AlamofireNetworkService.swift */,
+				EC80FC34244A406100CA0570 /* AlamofireHttpGetService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -541,6 +709,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		EC35EE122482EC95006FFACF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC35EE272482EC95006FFACF /* BookSeekerApplication.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC53B039246CBFA100C9C6D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -566,6 +742,45 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		EC35EE162482EC95006FFACF /* BookSeekerApplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC35EE282482EC95006FFACF /* Build configuration list for PBXNativeTarget "BookSeekerApplication" */;
+			buildPhases = (
+				EC35EE122482EC95006FFACF /* Headers */,
+				EC35EE132482EC95006FFACF /* Sources */,
+				EC35EE142482EC95006FFACF /* Frameworks */,
+				EC35EE152482EC95006FFACF /* Resources */,
+				EC35EE392482ECF1006FFACF /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC35EE342482ECF1006FFACF /* PBXTargetDependency */,
+				EC35EE382482ECF1006FFACF /* PBXTargetDependency */,
+			);
+			name = BookSeekerApplication;
+			productName = BookSeekerApplication;
+			productReference = EC35EE172482EC95006FFACF /* BookSeekerApplication.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EC35EE1E2482EC95006FFACF /* BookSeekerApplicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC35EE2B2482EC95006FFACF /* Build configuration list for PBXNativeTarget "BookSeekerApplicationTests" */;
+			buildPhases = (
+				EC35EE1B2482EC95006FFACF /* Sources */,
+				EC35EE1C2482EC95006FFACF /* Frameworks */,
+				EC35EE1D2482EC95006FFACF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC35EE222482EC95006FFACF /* PBXTargetDependency */,
+			);
+			name = BookSeekerApplicationTests;
+			productName = BookSeekerApplicationTests;
+			productReference = EC35EE1F2482EC95006FFACF /* BookSeekerApplicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EC53B03D246CBFA100C9C6D1 /* BookSeekerPresenter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC53B059246CBFA100C9C6D1 /* Build configuration list for PBXNativeTarget "BookSeekerPresenter" */;
@@ -613,10 +828,14 @@
 				EC5B436F244911E600EC0E7B /* Resources */,
 				3567B912552CDA437237E302 /* [CP] Embed Pods Frameworks */,
 				EC53DDB62462347200626E0C /* Embed PlugIns */,
+				EC35EE0E2482DA00006FFACF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EC35EE0D2482DA00006FFACF /* PBXTargetDependency */,
+				EC35EE3D2482EDB7006FFACF /* PBXTargetDependency */,
+				EC35EE412482EDC0006FFACF /* PBXTargetDependency */,
 			);
 			name = BookSeeker;
 			productName = BookSeeker;
@@ -642,24 +861,6 @@
 			productName = BookSeekerTests;
 			productReference = EC5B4387244911EA00EC0E7B /* BookSeekerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		EC5B4391244911EA00EC0E7B /* BookSeekerUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EC5B43A1244911EA00EC0E7B /* Build configuration list for PBXNativeTarget "BookSeekerUITests" */;
-			buildPhases = (
-				EC5B438E244911EA00EC0E7B /* Sources */,
-				EC5B438F244911EA00EC0E7B /* Frameworks */,
-				EC5B4390244911EA00EC0E7B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EC5B4394244911EA00EC0E7B /* PBXTargetDependency */,
-			);
-			name = BookSeekerUITests;
-			productName = BookSeekerUITests;
-			productReference = EC5B4392244911EA00EC0E7B /* BookSeekerUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		EC90199124675CAE00BD662B /* BookSeekerDomain */ = {
 			isa = PBXNativeTarget;
@@ -701,6 +902,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC901A222467647300BD662B /* Build configuration list for PBXNativeTarget "BookSeekerInfrastructure" */;
 			buildPhases = (
+				868479D5AC7EF988C929BA53 /* [CP] Check Pods Manifest.lock */,
 				EC901A0C2467647300BD662B /* Headers */,
 				EC901A0D2467647300BD662B /* Sources */,
 				EC901A0E2467647300BD662B /* Frameworks */,
@@ -745,6 +947,12 @@
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = CodeOfThings;
 				TargetAttributes = {
+					EC35EE162482EC95006FFACF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					EC35EE1E2482EC95006FFACF = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 					EC53B03D246CBFA100C9C6D1 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -756,10 +964,6 @@
 						CreatedOnToolsVersion = 11.3.1;
 					};
 					EC5B4386244911EA00EC0E7B = {
-						CreatedOnToolsVersion = 11.3.1;
-						TestTargetID = EC5B4370244911E600EC0E7B;
-					};
-					EC5B4391244911EA00EC0E7B = {
 						CreatedOnToolsVersion = 11.3.1;
 						TestTargetID = EC5B4370244911E600EC0E7B;
 					};
@@ -794,18 +998,33 @@
 			targets = (
 				EC5B4370244911E600EC0E7B /* BookSeeker */,
 				EC5B4386244911EA00EC0E7B /* BookSeekerTests */,
-				EC5B4391244911EA00EC0E7B /* BookSeekerUITests */,
 				EC90199124675CAE00BD662B /* BookSeekerDomain */,
 				EC90199924675CAF00BD662B /* BookSeekerDomainTests */,
 				EC901A102467647300BD662B /* BookSeekerInfrastructure */,
 				EC901A182467647300BD662B /* BookSeekerInfrastructureTests */,
 				EC53B03D246CBFA100C9C6D1 /* BookSeekerPresenter */,
 				EC53B045246CBFA100C9C6D1 /* BookSeekerPresenterTests */,
+				EC35EE162482EC95006FFACF /* BookSeekerApplication */,
+				EC35EE1E2482EC95006FFACF /* BookSeekerApplicationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EC35EE152482EC95006FFACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC35EE1D2482EC95006FFACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC53B03C246CBFA100C9C6D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -830,13 +1049,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EC5B4385244911EA00EC0E7B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EC5B4390244911EA00EC0E7B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -935,6 +1147,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookSeeker/Pods-BookSeeker-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		868479D5AC7EF988C929BA53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BookSeekerInfrastructure-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E99DCB1A1C725C572B2F7333 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -955,6 +1189,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EC35EE132482EC95006FFACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC35EE1B2482EC95006FFACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC35EE252482EC95006FFACF /* BookSeekerApplicationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EC53B03A246CBFA100C9C6D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -975,11 +1224,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4CF8EF245A2F2E00948743 /* UICustomView.swift in Sources */,
-				EC80FC39244A71E500CA0570 /* BookResponse.swift in Sources */,
 				EC4CF8F3245A47A300948743 /* AppCoordinator.swift in Sources */,
-				EC80FC2A244927FE00CA0570 /* BookSearch.swift in Sources */,
 				ECFA07A32454AC5D000FBFF4 /* UIViewSafeArea.swift in Sources */,
-				EC80FC262449265F00CA0570 /* Book.swift in Sources */,
 				EC3E38A4244D032A009E533C /* StringLocalizeExtension.swift in Sources */,
 				EC3E3896244C5CA6009E533C /* BookSearchDetailViewController.swift in Sources */,
 				EC80FC31244939EF00CA0570 /* BookSearchViewController.swift in Sources */,
@@ -993,15 +1239,11 @@
 				EC80FC48244B6CF400CA0570 /* BookSearchResultViewController.swift in Sources */,
 				EC4CF8F1245A407B00948743 /* BookSearchTextViewDelegate.swift in Sources */,
 				EC53DD32245CD86100626E0C /* ServiceAssembly.swift in Sources */,
-				EC80FC33244A402400CA0570 /* NetworkService.swift in Sources */,
-				EC80FC35244A406100CA0570 /* AlamofireNetworkService.swift in Sources */,
 				EC53DD30245CD7C700626E0C /* NetworkAssembly.swift in Sources */,
 				EC80FC2D2449346A00CA0570 /* BookSearchViewModel.swift in Sources */,
 				EC53DD34245CE06400626E0C /* BookSearchDetailViewModel.swift in Sources */,
 				EC5B4375244911E600EC0E7B /* AppDelegate.swift in Sources */,
 				EC3E38A1244D00AA009E533C /* UIViewAlertExtension.swift in Sources */,
-				EC80FC28244927CC00CA0570 /* BookSearchService.swift in Sources */,
-				EC80FC3B244A73BE00CA0570 /* Model.swift in Sources */,
 				EC5B4377244911E600EC0E7B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1014,17 +1256,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC5B438E244911EA00EC0E7B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EC90198E24675CAE00BD662B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC488EDF2483245200EFF355 /* HttpGetService.swift in Sources */,
+				EC35EE582482F77A006FFACF /* BookCompletion.swift in Sources */,
+				EC488EE4248324EB00EFF355 /* BookResponse.swift in Sources */,
+				EC488EE3248324EB00EFF355 /* Book.swift in Sources */,
+				EC35EE112482EBF9006FFACF /* Model.swift in Sources */,
+				EC488EE62483271000EFF355 /* RequestCompletion.swift in Sources */,
+				EC35EE60248322DB006FFACF /* BookSearchService.swift in Sources */,
+				EC35EDF32482D084006FFACF /* DomainError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1040,6 +1283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC35EE432482EE70006FFACF /* AlamofireHttpGetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1054,6 +1298,36 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EC35EE0D2482DA00006FFACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC90199124675CAE00BD662B /* BookSeekerDomain */;
+			targetProxy = EC35EE0C2482DA00006FFACF /* PBXContainerItemProxy */;
+		};
+		EC35EE222482EC95006FFACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC35EE162482EC95006FFACF /* BookSeekerApplication */;
+			targetProxy = EC35EE212482EC95006FFACF /* PBXContainerItemProxy */;
+		};
+		EC35EE342482ECF1006FFACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC90199124675CAE00BD662B /* BookSeekerDomain */;
+			targetProxy = EC35EE332482ECF1006FFACF /* PBXContainerItemProxy */;
+		};
+		EC35EE382482ECF1006FFACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC901A102467647300BD662B /* BookSeekerInfrastructure */;
+			targetProxy = EC35EE372482ECF1006FFACF /* PBXContainerItemProxy */;
+		};
+		EC35EE3D2482EDB7006FFACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC35EE162482EC95006FFACF /* BookSeekerApplication */;
+			targetProxy = EC35EE3C2482EDB7006FFACF /* PBXContainerItemProxy */;
+		};
+		EC35EE412482EDC0006FFACF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC901A102467647300BD662B /* BookSeekerInfrastructure */;
+			targetProxy = EC35EE402482EDC0006FFACF /* PBXContainerItemProxy */;
+		};
 		EC53B049246CBFA100C9C6D1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EC53B03D246CBFA100C9C6D1 /* BookSeekerPresenter */;
@@ -1068,11 +1342,6 @@
 			isa = PBXTargetDependency;
 			target = EC5B4370244911E600EC0E7B /* BookSeeker */;
 			targetProxy = EC5B4388244911EA00EC0E7B /* PBXContainerItemProxy */;
-		};
-		EC5B4394244911EA00EC0E7B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EC5B4370244911E600EC0E7B /* BookSeeker */;
-			targetProxy = EC5B4393244911EA00EC0E7B /* PBXContainerItemProxy */;
 		};
 		EC90199D24675CAF00BD662B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1113,6 +1382,96 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EC35EE292482EC95006FFACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V7U57L9B68;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BookSeekerApplication/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerApplication;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EC35EE2A2482EC95006FFACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = V7U57L9B68;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = BookSeekerApplication/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerApplication;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EC35EE2C2482EC95006FFACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7U57L9B68;
+				INFOPLIST_FILE = BookSeekerApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC35EE2D2482EC95006FFACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V7U57L9B68;
+				INFOPLIST_FILE = BookSeekerApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		EC53B055246CBFA100C9C6D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1327,6 +1686,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3E6AC713820FF92D48E170E7 /* Pods-BookSeeker.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7U57L9B68;
@@ -1346,6 +1706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 93DCA9FC93B824D24B5AFCBB /* Pods-BookSeeker.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V7U57L9B68;
@@ -1405,46 +1766,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookSeeker.app/BookSeeker";
-			};
-			name = Release;
-		};
-		EC5B43A2244911EA00EC0E7B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V7U57L9B68;
-				INFOPLIST_FILE = BookSeekerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BookSeeker;
-			};
-			name = Debug;
-		};
-		EC5B43A3244911EA00EC0E7B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = V7U57L9B68;
-				INFOPLIST_FILE = BookSeekerUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.br.codeofthings.dogage.BookSeekerUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BookSeeker;
 			};
 			name = Release;
 		};
@@ -1516,6 +1837,7 @@
 		EC9019A524675CAF00BD662B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = V7U57L9B68;
@@ -1536,6 +1858,7 @@
 		EC9019A624675CAF00BD662B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = V7U57L9B68;
@@ -1555,11 +1878,13 @@
 		};
 		EC901A232467647300BD662B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C1D1A213E426863857E1374 /* Pods-BookSeekerInfrastructure.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
 				DEVELOPMENT_TEAM = V7U57L9B68;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1576,6 +1901,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1584,11 +1910,13 @@
 		};
 		EC901A242467647300BD662B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F75F2ADFA5278EECEBBE690 /* Pods-BookSeekerInfrastructure.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
 				DEVELOPMENT_TEAM = V7U57L9B68;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1605,6 +1933,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1614,6 +1943,7 @@
 		EC901A262467647300BD662B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = V7U57L9B68;
@@ -1634,6 +1964,7 @@
 		EC901A272467647300BD662B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = V7U57L9B68;
@@ -1654,6 +1985,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EC35EE282482EC95006FFACF /* Build configuration list for PBXNativeTarget "BookSeekerApplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC35EE292482EC95006FFACF /* Debug */,
+				EC35EE2A2482EC95006FFACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC35EE2B2482EC95006FFACF /* Build configuration list for PBXNativeTarget "BookSeekerApplicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC35EE2C2482EC95006FFACF /* Debug */,
+				EC35EE2D2482EC95006FFACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EC53B059246CBFA100C9C6D1 /* Build configuration list for PBXNativeTarget "BookSeekerPresenter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1695,15 +2044,6 @@
 			buildConfigurations = (
 				EC5B439F244911EA00EC0E7B /* Debug */,
 				EC5B43A0244911EA00EC0E7B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EC5B43A1244911EA00EC0E7B /* Build configuration list for PBXNativeTarget "BookSeekerUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EC5B43A2244911EA00EC0E7B /* Debug */,
-				EC5B43A3244911EA00EC0E7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

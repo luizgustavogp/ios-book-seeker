@@ -8,6 +8,9 @@
 
 import UIKit
 import Swinject
+import BookSeekerDomain
+import BookSeekerApplication
+import BookSeekerInfrastructure
 
 protocol Coordinator {
     
@@ -41,8 +44,8 @@ public class AppCoordinator : Coordinator {
 
 extension AppCoordinator : BookSearchViewControllerDelegate{
     public func didSearch(_ term: String) {
-        let network : AlamofireNetworkService = AlamofireNetworkService()
-        let bookServiceApi = BookSearchApiService(networkService: network)
+        let network : AlamofireHttpGetService = AlamofireHttpGetService()
+        let bookServiceApi = BookSearchService(networkService: network)
         let bookSearchResultViewModel = BookSearchResultViewModel(bookSearch: bookServiceApi)
         let bookSearchResultViewController = BookSearchResultViewController(bookSearchResultViewModel: bookSearchResultViewModel, term: term)
         

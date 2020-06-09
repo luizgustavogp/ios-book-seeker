@@ -7,18 +7,21 @@
 //
 
 import XCTest
+
 @testable import BookSeeker
+@testable import BookSeekerDomain
+@testable import BookSeekerInfrastructure
 
 class BookSearchServiceIntegrationTests: XCTestCase {
     
-    private var bookServiceApi :BookSearchApiService!
+    private var bookServiceApi :BookSearchService!
     
     override func setUp() {
         super.setUp()
         
-        let network : AlamofireNetworkService = AlamofireNetworkService()
+        let network : AlamofireHttpGetService = AlamofireHttpGetService()
         
-        self.bookServiceApi = BookSearchApiService(networkService: network)
+        self.bookServiceApi = BookSearchService(networkService: network)
     }
     
     override func tearDown() {

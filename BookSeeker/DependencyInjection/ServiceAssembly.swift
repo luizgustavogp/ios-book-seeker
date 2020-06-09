@@ -8,13 +8,16 @@
 
 
 import Swinject
+import BookSeekerDomain
+import BookSeekerApplication
+import BookSeekerInfrastructure
 
 public final class ServiceAssembly : Assembly{
     
     public func assemble(container: Container) {
-        container.register(BookSearch.self) {r  in
-            let networkService = r.resolve(NetworkService.self)!
-            return BookSearchApiService(networkService: networkService)
+        container.register(BookSearchService.self) {r  in
+            let httpGetService = r.resolve(HttpGetService.self)!
+            return BookSearchService(networkService: httpGetService)
         }
     }
 }

@@ -8,14 +8,16 @@
 
 import Foundation
 import RxSwift
+import BookSeekerDomain 
+import BookSeekerApplication
 
 final class BookSearchDetailViewModel {
     
-    private var bookSearch : BookSearch?;
+    private var bookSearch : BookSearchService?;
     
     let bookObservable = PublishSubject<BookViewModelCompletion>()
     
-    init(bookSearch : BookSearch) {
+    init(bookSearch : BookSearchService) {
         self.bookSearch = bookSearch;
     }
     

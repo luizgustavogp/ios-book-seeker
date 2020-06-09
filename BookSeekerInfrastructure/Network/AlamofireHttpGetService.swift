@@ -8,11 +8,13 @@
 
 import Foundation
 import Alamofire
+import BookSeekerDomain
 
-class AlamofireNetworkService: NetworkService {
+public class AlamofireHttpGetService: HttpGetService {
+    
+    public init() {}
        
-    //Change it to be generic
-    func get(url: URL, parameters: [String : Any]?, completion: @escaping RequestCompletion) {
+    public func get(url: URL, parameters: [String : Any]?, completion: @escaping RequestCompletion) {
         AF.request(url, parameters: parameters)
             .responseData { response in
                 switch response.result {
