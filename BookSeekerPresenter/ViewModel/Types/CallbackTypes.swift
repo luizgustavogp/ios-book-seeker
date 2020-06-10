@@ -9,5 +9,4 @@
 import Foundation
 import BookSeekerDomain
 
-
 public typealias BookViewModelCompletion = (bookResponse: BookResponse?, error: String?)

@@ -8,6 +8,6 @@
 
 import UIKit
 
-public protocol BookSearchViewControllerDelegate : class {    
+public protocol BookSearchViewControllerDelegate: class {
     func didSearch(_ term: String)
 }

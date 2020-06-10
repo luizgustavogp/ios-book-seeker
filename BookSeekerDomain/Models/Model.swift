@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol Model : Codable {  }
+public protocol Model: Codable {  }
 
 public extension Model {
     func toData() -> Data? {
@@ -17,9 +17,7 @@ public extension Model {
 }
 
 public extension Data {
-    func toModel<M :Decodable>() -> M? {
+    func toModel<M: Decodable>() -> M? {
         return try? JSONDecoder().decode(M.self, from: self)
     }
 }
-
-

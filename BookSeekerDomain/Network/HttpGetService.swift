@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol HttpGetService {    
+public protocol HttpGetService {
     func get(url: URL, parameters: [String: Any]?, completion: @escaping RequestCompletion)
 }

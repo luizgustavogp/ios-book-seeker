@@ -8,8 +8,7 @@
 
 import Foundation
 
-
-public struct BookResponse : Decodable {
-   public let resultCount : Int
-   public let results : [Book]
+public struct BookResponse: Decodable {
+   public let resultCount: Int
+   public let results: [Book]
 }

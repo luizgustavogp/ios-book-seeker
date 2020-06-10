@@ -799,6 +799,7 @@
 				EC35EE142482EC95006FFACF /* Frameworks */,
 				EC35EE152482EC95006FFACF /* Resources */,
 				EC35EE392482ECF1006FFACF /* Embed Frameworks */,
+				EC835126249196F70052D5F6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -839,6 +840,7 @@
 				EC53B03B246CBFA100C9C6D1 /* Frameworks */,
 				EC53B03C246CBFA100C9C6D1 /* Resources */,
 				EC83511B249045C70052D5F6 /* Embed Frameworks */,
+				EC835125249196EE0052D5F6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -880,6 +882,7 @@
 				3567B912552CDA437237E302 /* [CP] Embed Pods Frameworks */,
 				EC53DDB62462347200626E0C /* Embed PlugIns */,
 				EC35EE0E2482DA00006FFACF /* Embed Frameworks */,
+				EC835122249191160052D5F6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -922,6 +925,7 @@
 				EC90198E24675CAE00BD662B /* Sources */,
 				EC90198F24675CAE00BD662B /* Frameworks */,
 				EC90199024675CAE00BD662B /* Resources */,
+				EC835123249196D50052D5F6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -960,6 +964,7 @@
 				EC901A0E2467647300BD662B /* Frameworks */,
 				EC901A0F2467647300BD662B /* Resources */,
 				EC901A322467678F00BD662B /* Embed Frameworks */,
+				EC835124249196E50052D5F6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1259,6 +1264,91 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookSeekerTests/Pods-BookSeekerTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		EC835122249191160052D5F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		EC835123249196D50052D5F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		EC835124249196E50052D5F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		EC835125249196EE0052D5F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		EC835126249196F70052D5F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

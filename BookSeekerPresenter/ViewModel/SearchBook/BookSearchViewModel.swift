@@ -9,14 +9,14 @@
 import Foundation
 
 public final class BookSearchViewModel {
-    
+
     public init() {
-    }    
-    
-    func addSearch(term : String)  {        
     }
-    
-    func termIsValid(term : String?) -> Bool {
-        return  term != nil && term!.count > 0;
-    }    
+
+    func addSearch(term: String) {
+    }
+
+    func termIsValid(term: String?) -> Bool {
+        return  term != nil && term!.count > 0
+    }
 }

@@ -11,14 +11,14 @@ import Swinject
 //https://github.com/Swinject/Swinject/blob/master/Documentation/Assembler.md
 
 class BookSeekerAssembler {
-    
+
     func register() -> Assembler {
-        
+
         let assembler = Assembler([
             NetworkAssembly(),
             ServiceAssembly(),
             UseCaseAssembly()
         ])
-        return assembler;
+        return assembler
     }
 }

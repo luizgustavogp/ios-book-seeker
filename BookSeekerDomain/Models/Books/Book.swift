@@ -8,8 +8,8 @@
 
 import Foundation
 
-public struct Book : Model {
-    
+public struct Book: Model {
+
     public let trackId: Int
     public let trackName: String
     public let description: String

@@ -8,6 +8,5 @@
 
 import Foundation
 
-public class DomainError : Error
-{    
+public class DomainError: Error {
 }

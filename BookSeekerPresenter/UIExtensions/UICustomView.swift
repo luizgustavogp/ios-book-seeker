@@ -9,11 +9,12 @@
 import UIKit
 
 public class CustomViewController<CustomView: UIView>: UIViewController {
-    
     var customView: CustomView {
-        return view as! CustomView
+        guard let customView = view as? CustomView else {
+            fatalError("view is not a custom view")
+        }
+        return customView
     }
-
     public override func loadView() {
         view = CustomView()
     }

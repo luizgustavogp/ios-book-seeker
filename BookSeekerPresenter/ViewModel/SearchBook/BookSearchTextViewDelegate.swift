@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol BookSearchTextViewDelegate : class {
+public protocol BookSearchTextViewDelegate: class {
      func didSearch(_ term: String)
 }

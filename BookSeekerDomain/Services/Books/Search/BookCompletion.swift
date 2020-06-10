@@ -8,4 +8,4 @@
 
 import Foundation
 
-public typealias BookCompletion = (_ book: BookResponse?, _ errorMessage : String?) -> Void
+public typealias BookCompletion = (_ book: BookResponse?, _ errorMessage: String?) -> Void

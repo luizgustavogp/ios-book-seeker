@@ -11,22 +11,19 @@ import RxSwift
 import BookSeekerDomain
 import BookSeekerApplication
 
-
-
 public final class BookSearchResultViewModel {
-    
-    private var bookSearch : BookSearchService?;
-    
+
+    private var bookSearch: BookSearchService?
+
     let bookObservable = PublishSubject<BookViewModelCompletion>()
-    
-    public init(bookSearch : BookSearchService) {
-        self.bookSearch = bookSearch;
+
+    public init(bookSearch: BookSearchService) {
+        self.bookSearch = bookSearch
     }
-    
+
     func search(term: String) {
-        self.bookSearch?.findByTerm(term :term){ response, error in
+        self.bookSearch?.findByTerm(term: term) { response, error in
             self.bookObservable.onNext((response, error))
         }
     }
 }
-

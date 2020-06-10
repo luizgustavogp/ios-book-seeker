@@ -20,14 +20,14 @@ extension UIView {
   }
 
   var safeLeftAnchor: NSLayoutXAxisAnchor {
-    if #available(iOS 11.0, *){
+    if #available(iOS 11.0, *) {
       return self.safeAreaLayoutGuide.leftAnchor
     }
     return self.leftAnchor
   }
 
   var safeRightAnchor: NSLayoutXAxisAnchor {
-    if #available(iOS 11.0, *){
+    if #available(iOS 11.0, *) {
       return self.safeAreaLayoutGuide.rightAnchor
     }
     return self.rightAnchor

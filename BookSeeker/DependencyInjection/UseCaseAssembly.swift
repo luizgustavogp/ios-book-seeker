@@ -11,37 +11,36 @@ import BookSeekerDomain
 import BookSeekerApplication
 import BookSeekerPresenter
 
+public final class UseCaseAssembly: Assembly {
 
-public final class UseCaseAssembly : Assembly{
-    
     public func assemble(container: Container) {
-        
+
         container.register(BookSearchViewModel.self) {_ in
             return BookSearchViewModel()
         }
-        
-        container.register(BookSearchViewController.self) { r in
-            let bookSearchViewModel = r.resolve(BookSearchViewModel.self)!
+
+        container.register(BookSearchViewController.self) { resolver in
+            let bookSearchViewModel = resolver.resolve(BookSearchViewModel.self)!
             return BookSearchViewController(viewModelBookSearch: bookSearchViewModel)
         }
-        
-        container.register(BookSearchResultViewModel.self) {r in
-            let bookSearchApi = r.resolve(BookSearchService.self)!
+
+        container.register(BookSearchResultViewModel.self) {resolver in
+            let bookSearchApi = resolver.resolve(BookSearchService.self)!
             return BookSearchResultViewModel(bookSearch: bookSearchApi)
         }
-        
-        container.register(BookSearchResultViewController.self) { (r, term: String) in
-            let bookSearchResultViewModel = r.resolve(BookSearchResultViewModel.self)!
-            return BookSearchResultViewController(bookSearchResultViewModel :bookSearchResultViewModel, term: term)
+
+        container.register(BookSearchResultViewController.self) { (resolver, term: String) in
+            let bookSearchResultViewModel = resolver.resolve(BookSearchResultViewModel.self)!
+            return BookSearchResultViewController(bookSearchResultViewModel: bookSearchResultViewModel, term: term)
         }
-        
-        container.register(BookSearchDetailViewModel.self) {r in
-            let bookSearchApi = r.resolve(BookSearchService.self)!
+
+        container.register(BookSearchDetailViewModel.self) {resolver in
+            let bookSearchApi = resolver.resolve(BookSearchService.self)!
             return BookSearchDetailViewModel(bookSearch: bookSearchApi)
         }
-        
-        container.register(BookSearchDetailViewController.self) { (r, bookId: Int) in
-            let bookSearchDetailViewModel = r.resolve(BookSearchDetailViewModel.self)!
+
+        container.register(BookSearchDetailViewController.self) { (resolver, bookId: Int) in
+            let bookSearchDetailViewModel = resolver.resolve(BookSearchDetailViewModel.self)!
             return BookSearchDetailViewController(bookSearchDetailViewModel: bookSearchDetailViewModel, bookId: bookId)
         }
     }

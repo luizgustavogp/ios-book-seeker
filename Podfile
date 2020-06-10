@@ -27,3 +27,8 @@ target 'BookSeekerTests' do
   pod 'RxCocoa'
   pod 'Kingfisher'
 end
+
+# ignore all warnings from all dependencies
+inhibit_all_warnings!
+# ignore warnings from a specific dependency
+pod 'FBSDKCoreKit', :inhibit_warnings => true

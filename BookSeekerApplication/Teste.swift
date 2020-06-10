@@ -8,8 +8,8 @@
 
 import Foundation
 
-class Teste{
+class Teste {
     func jesus() -> void {
-                    
+
     }
 }

@@ -8,21 +8,21 @@
 
 import RxSwift
 import Foundation
-import BookSeekerDomain 
+import BookSeekerDomain
 import BookSeekerApplication
 
 public final class BookSearchDetailViewModel {
-    
-    private var bookSearch : BookSearchService?;
-    
+
+    private var bookSearch: BookSearchService?
+
     let bookObservable = PublishSubject<BookViewModelCompletion>()
-    
-    public init(bookSearch : BookSearchService) {
-        self.bookSearch = bookSearch;
+
+    public init(bookSearch: BookSearchService) {
+        self.bookSearch = bookSearch
     }
-    
-    func search(id: Int) {
-        self.bookSearch?.findById(id: id){ response, error in
+
+    func search(bookId: Int) {
+        self.bookSearch?.findById(bookId: bookId) { response, error in
             self.bookObservable.onNext((response, error))
         }
     }

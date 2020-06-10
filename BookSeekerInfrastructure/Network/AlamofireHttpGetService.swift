@@ -11,10 +11,10 @@ import Alamofire
 import BookSeekerDomain
 
 public class AlamofireHttpGetService: HttpGetService {
-    
+
     public init() {}
-       
-    public func get(url: URL, parameters: [String : Any]?, completion: @escaping RequestCompletion) {
+
+    public func get(url: URL, parameters: [String: Any]?, completion: @escaping RequestCompletion) {
         AF.request(url, parameters: parameters)
             .responseData { response in
                 switch response.result {
@@ -27,4 +27,3 @@ public class AlamofireHttpGetService: HttpGetService {
         }
     }
 }
-
