@@ -20,6 +20,8 @@ public class BookSearchResultViewController: UITableViewController  {
     
     private let disposeBag = DisposeBag()
     
+    public var delegate : BookSearchDetailViewControllerDelegate?
+    
     public override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -72,7 +74,9 @@ public class BookSearchResultViewController: UITableViewController  {
     }
     
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //let book = self.books?[indexPath.row]
+        guard let book = self.books?[indexPath.row] else { return }
+       
+        self.delegate?.bookDetail(book.trackId)
     }
 }
 

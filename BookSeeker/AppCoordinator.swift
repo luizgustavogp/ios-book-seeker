@@ -36,7 +36,7 @@ public class AppCoordinator : Coordinator {
     func start() {
         
         let rootViewController = resolver.resolve(BookSearchViewController.self)!
-        rootViewController.bookSearchViewControllerDelegate = self
+        rootViewController.delegate = self
         
         self.navigationController.pushViewController(rootViewController, animated: true)
     }
@@ -47,12 +47,16 @@ extension AppCoordinator : BookSearchViewControllerDelegate{
     public func didSearch(_ term: String) {
         let bookSearchResultViewController = resolver.resolve(BookSearchResultViewController.self, argument: term)!
         
+        bookSearchResultViewController.delegate = self;
+        
         self.navigationController.pushViewController(bookSearchResultViewController, animated: true)
     }
-    
-    public func didDetail(_ bookId: Int) {
+}
+
+extension AppCoordinator : BookSearchDetailViewControllerDelegate{
+    public func bookDetail(_ bookId: Int) {
         let bookSearchDetailViewController = resolver.resolve(BookSearchDetailViewController.self, argument: bookId)!
-        
+       
         self.navigationController.pushViewController(bookSearchDetailViewController, animated: true)
     }
 }

@@ -12,8 +12,7 @@ public final class BookSearchViewController: CustomViewController<BookSearchView
     
     private var viewModelBookSearch: BookSearchViewModel!
     
-    //Why it can't be weak?
-    public var bookSearchViewControllerDelegate : BookSearchViewControllerDelegate?
+    public var delegate : BookSearchViewControllerDelegate?
     
     public override func loadView() {
         super.loadView()
@@ -53,7 +52,7 @@ extension BookSearchViewController : BookSearchTextViewDelegate {
             self.alert(title: "book_search_title".localized(), message: "book_search_message".localized());  return
         }
         
-        self.bookSearchViewControllerDelegate?.didSearch(term)
+        self.delegate?.didSearch(term)
     }
 }
 
