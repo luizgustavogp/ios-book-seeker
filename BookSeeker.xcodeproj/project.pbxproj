@@ -37,7 +37,6 @@
 		EC4CF8F3245A47A300948743 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4CF8F2245A47A300948743 /* AppCoordinator.swift */; };
 		EC53B047246CBFA100C9C6D1 /* BookSeekerPresenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC53B03E246CBFA100C9C6D1 /* BookSeekerPresenter.framework */; };
 		EC53B04E246CBFA100C9C6D1 /* BookSeekerPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53B04D246CBFA100C9C6D1 /* BookSeekerPresenterTests.swift */; };
-		EC53B050246CBFA100C9C6D1 /* BookSeekerPresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = EC53B040246CBFA100C9C6D1 /* BookSeekerPresenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EC53DD2E245CD73C00626E0C /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53DD2D245CD73C00626E0C /* UseCaseAssembly.swift */; };
 		EC53DD30245CD7C700626E0C /* NetworkAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53DD2F245CD7C700626E0C /* NetworkAssembly.swift */; };
 		EC53DD32245CD86100626E0C /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC53DD31245CD86100626E0C /* ServiceAssembly.swift */; };
@@ -271,7 +270,6 @@
 		EC4CF8F0245A407B00948743 /* BookSearchTextViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSearchTextViewDelegate.swift; sourceTree = "<group>"; };
 		EC4CF8F2245A47A300948743 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		EC53B03E246CBFA100C9C6D1 /* BookSeekerPresenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BookSeekerPresenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC53B040246CBFA100C9C6D1 /* BookSeekerPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookSeekerPresenter.h; sourceTree = "<group>"; };
 		EC53B041246CBFA100C9C6D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC53B046246CBFA100C9C6D1 /* BookSeekerPresenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookSeekerPresenterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC53B04D246CBFA100C9C6D1 /* BookSeekerPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeekerPresenterTests.swift; sourceTree = "<group>"; };
@@ -550,7 +548,6 @@
 			children = (
 				EC4CF8ED245A251300948743 /* UIExtensions */,
 				EC5B43A52449146300EC0E7B /* ViewModel */,
-				EC53B040246CBFA100C9C6D1 /* BookSeekerPresenter.h */,
 				EC53B041246CBFA100C9C6D1 /* Info.plist */,
 			);
 			path = BookSeekerPresenter;
@@ -769,7 +766,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC53B050246CBFA100C9C6D1 /* BookSeekerPresenter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,7 +795,6 @@
 				EC35EE142482EC95006FFACF /* Frameworks */,
 				EC35EE152482EC95006FFACF /* Resources */,
 				EC35EE392482ECF1006FFACF /* Embed Frameworks */,
-				EC835126249196F70052D5F6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -840,7 +835,6 @@
 				EC53B03B246CBFA100C9C6D1 /* Frameworks */,
 				EC53B03C246CBFA100C9C6D1 /* Resources */,
 				EC83511B249045C70052D5F6 /* Embed Frameworks */,
-				EC835125249196EE0052D5F6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -925,7 +919,6 @@
 				EC90198E24675CAE00BD662B /* Sources */,
 				EC90198F24675CAE00BD662B /* Frameworks */,
 				EC90199024675CAE00BD662B /* Resources */,
-				EC835123249196D50052D5F6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -964,7 +957,6 @@
 				EC901A0E2467647300BD662B /* Frameworks */,
 				EC901A0F2467647300BD662B /* Resources */,
 				EC901A322467678F00BD662B /* Embed Frameworks */,
-				EC835124249196E50052D5F6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1266,74 +1258,6 @@
 			showEnvVarsInLog = 0;
 		};
 		EC835122249191160052D5F6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		EC835123249196D50052D5F6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		EC835124249196E50052D5F6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		EC835125249196EE0052D5F6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		EC835126249196F70052D5F6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
